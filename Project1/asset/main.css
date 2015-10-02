@@ -1,0 +1,20 @@
+
+.gbr-col {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    float: left
+}
+
+.gbr-col.selected {
+    background: black;
+    border-color: white;
+}
+
+.gbr-col.f-click{
+    border-color: green;
+}
+
+.gb-row {
+    overflow: auto;
+}
