@@ -1,20 +1,21 @@
-html ,body{
+html, body {
     margin: 0;
     height: 100%;
     width: 100%;
 }
 
-section{
+section {
     height: 100%;
     width: 100%;
 }
 
-.overview{
+.overview {
     position: relative;
     background: black;
+    margin-bottom: 200px;
 }
 
-.prof-image-wrap{
+.prof-image-wrap {
     height: 400px;
     width: 400px;
     position: absolute;
@@ -24,7 +25,7 @@ section{
     margin-bottom: -200px;
 }
 
-.prof-image{
+.prof-image {
     height: 100%;
     width: 100%;
     border-radius: 50%;
@@ -43,13 +44,13 @@ section{
     text-align: center;
 }
 
-a{
-    color:inherit;
+a {
+    color: inherit;
     text-decoration: none;
 }
 
-.company-link:hover{
-    color:#ccc;
+.company-link:hover {
+    color: #ccc;
 }
 
 .name {
@@ -71,7 +72,7 @@ a{
 .link-list {
     list-style-type: none;
     display: inline-block;
-    width: 13%;
+    width: 16%;
 }
 
 .link {
@@ -81,4 +82,86 @@ a{
 
 .link:hover {
     color: #ccc;
+}
+
+.s-body {
+    padding: 40px 0;
+}
+
+.s-title {
+    text-align: center;
+    font-size: 70px;
+}
+
+.t-border {
+    background-color: #F54F36;
+    display: block;
+    margin: 25px auto;
+    width: 60px;
+    height: 2px;
+}
+
+.c-main {
+    position: relative;
+    height: 600px;
+}
+
+.map-overlay {
+    background: rgba(4, 175, 15, 0.3);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+}
+
+.c-list {
+    top: 50%;
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    transform: translate(0, -50%);
+}
+
+.c-item {
+    list-style-type: none;
+    width: 24%;
+    text-align: center;
+    display: inline-block;
+}
+
+.c-i-icon {
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    border: 2px solid;
+    border-radius: 50%;
+    position: relative;
+}
+
+.c-i-icon:hover {
+    background: #01c87b;
+    border-color: #01c87b;
+}
+
+.c-ii-svg {
+    height: 60px;
+    width: 60px;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill : white;
+}
+
+.c-i-label {
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+#map {
+    height: 100%;
+    width: 100%
 }

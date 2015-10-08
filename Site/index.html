@@ -1,36 +1,178 @@
-<!DOCTYPE html>
+<!DOCTYPE html svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <html>
 <head lang="en">
     <meta charset="UTF-8">
     <title>Aman Jain</title>
     <link rel="stylesheet" href="assets/main.css">
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
+    <script>
+        function initialize() {
+            var mapCanvas = document.getElementById('map');
+            var mapOptions = {
+                center: new google.maps.LatLng(28.417, 76.9529),
+                zoom: 13,
+                mapTypeId: google.maps.MapTypeId.HYBRID,
+                disableDefaultUI: true
+            }
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+        }
+
+        function copyTextToClipboard() {
+            var textArea = document.createElement("textarea");
+
+            textArea.style.position = 'fixed';
+            textArea.style.top = 0;
+            textArea.style.left = 0;
+
+            textArea.style.width = '2em';
+            textArea.style.height = '2em';
+
+            textArea.style.padding = 0;
+
+            textArea.style.border = 'none';
+            textArea.style.outline = 'none';
+            textArea.style.boxShadow = 'none';
+
+            textArea.style.background = 'transparent';
+
+            textArea.value = '+91-9643137134';
+
+            document.body.appendChild(textArea);
+
+            textArea.select();
+
+            try {
+                var successful = document.execCommand('copy');
+                var msg = successful ? 'successful' : 'unsuccessful';
+
+            } catch (err) {
+            }
+
+            document.body.removeChild(textArea);
+            return false;
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 </head>
 <body>
 <section class="overview">
     <div id="main">
         <div class="name">Aman Jain</div>
-        <div class="title"> UI Developer, currently working at <a class="company-link" href="https://www.sprinklr.com" target="_blank">Sprinklr</a></div>
+        <div class="title"> UI Developer, currently working at <a class="company-link" href="https://www.sprinklr.com"
+                                                                  target="_blank">Sprinklr</a></div>
         <hr>
         <ul class="social-links">
             <li class="link-list"><a class="link" href="https://twitter.com/91aman" target="_blank">Twitter</a></li>
-            <li class="link-list"><a class="link" href="https://www.facebook.com/91aman" target="_blank">Facebook</a></li>
+            <li class="link-list"><a class="link" href="https://www.facebook.com/91aman" target="_blank">Facebook</a>
+            </li>
             <li class="link-list"><a class="link" href="https://github.com/91aman" target="_blank">Github</a></li>
-            <li class="link-list"><a class="link" href="https://in.linkedin.com/in/91aman" target="_blank">LinkedIn</a></li>
-            <li class="link-list"><a class="link" href="https://instagram.com/91aman/" target="_blank">Instagram</a></li>
-            <li class="link-list"><a class="link" href="https://plus.google.com/u/0/100491256339589896742" target="_blank">Google+</a></li>
-            <li class="link-list"><a class="link" href="mailto:91aman@gmail.com?Subject=[Website]Hello">Contact</a></li>
+            <li class="link-list"><a class="link" href="https://in.linkedin.com/in/91aman" target="_blank">LinkedIn</a>
+            </li>
+            <li class="link-list"><a class="link" href="https://instagram.com/91aman/" target="_blank">Instagram</a>
+            </li>
+            <li class="link-list"><a class="link" href="https://plus.google.com/u/0/100491256339589896742"
+                                     target="_blank">Google+</a></li>
         </ul>
     </div>
     <div class="prof-image-wrap">
         <img class="prof-image" src="assets/images/proImg.jpg">
     </div>
 </section>
-<section class="contact">
-    Contact
-</section>
+<section class="contact s-body">
+    <div class="s-title">
+        <span>Contact Me</span>
+        <span class="t-border"></span>
+    </div>
+    <div class="c-main">
+        <div id="map"></div>
+        <div class="map-overlay">
+            <ul class="c-list">
+                <li class="c-item">
+                    <a href="javaScript:void(0);" onclick="copyTextToClipboard()">
+                    <div class="c-i-icon">
+                        <svg class="c-ii-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35">
+                            <g>
+                                <path d="M25.302,0H9.698c-1.3,0-2.364,1.063-2.364,2.364v30.271C7.334,33.936,8.398,35,9.698,35h15.604
+		c1.3,0,2.364-1.062,2.364-2.364V2.364C27.666,1.063,26.602,0,25.302,0z M15.004,1.704h4.992c0.158,0,0.286,0.128,0.286,0.287
+		c0,0.158-0.128,0.286-0.286,0.286h-4.992c-0.158,0-0.286-0.128-0.286-0.286C14.718,1.832,14.846,1.704,15.004,1.704z M17.5,33.818
+		c-0.653,0-1.182-0.529-1.182-1.183s0.529-1.182,1.182-1.182s1.182,0.528,1.182,1.182S18.153,33.818,17.5,33.818z M26.021,30.625
+		H8.979V3.749h17.042V30.625z"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="c-i-label"> +91-9643-137-134</div>
+                    </a>
+                </li>
+                <li class="c-item">
+                    <a href="skype:amanjain1991?chat">
+                        <div class="c-i-icon">
+                            <svg class="c-ii-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430.123 430.123">
+                                <g>
+                                    <path d="M412.164,246.198c1.605-10.155,2.45-20.544,2.45-31.148c0-110.215-89.342-199.555-199.56-199.555
+		c-10.576,0-20.995,0.871-31.141,2.458C165.534,6.581,143.842,0,120.595,0C53.996,0,0.005,53.984,0.005,120.59
+		c0,23.242,6.585,44.916,17.952,63.332c-1.573,10.172-2.439,20.528-2.439,31.132c0,110.223,89.34,199.536,199.532,199.536
+		c10.585,0,21.007-0.816,31.152-2.417c18.398,11.35,40.072,17.949,63.314,17.949c66.617,0,120.602-53.998,120.602-120.602
+		C430.123,286.269,423.542,264.6,412.164,246.198z M309.801,305.81c-8.442,12.153-20.843,21.65-37.047,28.479
+		c-16.237,6.847-35.428,10.254-57.59,10.254c-26.562,0-48.554-4.648-65.913-14.034c-12.305-6.721-22.313-15.737-30.007-26.98
+		c-7.71-11.252-11.619-22.271-11.619-33.015c0-6.338,2.417-11.85,7.122-16.344c4.754-4.527,10.877-6.796,18.104-6.796
+		c5.92,0,11.005,1.783,15.145,5.316c4.109,3.532,7.556,8.667,10.375,15.443c3.379,7.85,7.049,14.412,10.954,19.648
+		c3.881,5.171,9.343,9.488,16.417,12.867c6.996,3.388,16.307,5.082,27.958,5.082c15.945,0,28.831-3.449,38.693-10.253
+		c9.912-6.866,14.673-15.22,14.673-25.314c0-8.051-2.567-14.445-7.831-19.43c-5.312-5.05-12.172-8.896-20.685-11.579
+		c-8.546-2.711-20.02-5.586-34.399-8.615c-19.308-4.214-35.456-9.119-48.533-14.752c-13.094-5.654-23.522-13.383-31.251-23.146
+		c-7.745-9.859-11.607-22.113-11.607-36.627c0-13.84,4.077-26.217,12.239-36.989c8.158-10.802,19.961-19.07,35.351-24.829
+		c15.336-5.757,33.391-8.637,54.075-8.637c16.541,0,30.849,1.914,42.96,5.722c12.078,3.836,22.146,8.898,30.196,15.25
+		c7.999,6.338,13.885,13.023,17.613,20.038c3.725,7.036,5.601,13.908,5.601,20.614c0,6.235-2.417,11.89-7.127,16.846
+		c-4.709,4.963-10.733,7.493-17.768,7.47c-6.342,0-11.317-1.463-14.767-4.56c-3.36-2.996-6.889-7.766-10.706-14.414
+		c-4.825-9.276-10.604-16.503-17.324-21.672c-6.543-5.073-17.338-7.714-32.359-7.682c-13.898,0-25.018,2.84-33.411,8.394
+		c-8.445,5.643-12.482,12.19-12.501,19.861c0.014,4.807,1.396,8.86,4.177,12.326c2.824,3.498,6.753,6.529,11.803,9.084
+		c5.052,2.595,10.191,4.602,15.355,6.046c5.225,1.481,13.894,3.622,25.944,6.457c15.112,3.257,28.819,6.896,41.136,10.862
+		c12.293,3.986,22.784,8.793,31.451,14.52c8.736,5.71,15.564,12.99,20.438,21.783c4.909,8.807,7.354,19.564,7.354,32.222
+		C322.509,279.968,318.263,293.676,309.801,305.81z"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="c-i-label"> /amanjain1991</div>
+                    </a>
+                </li>
+                <li class="c-item">
+                    <a href="mailto:91aman@gmail.com?Subject=[Website]Hello">
+                        <div class="c-i-icon">
+                            <svg class="c-ii-svg" xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 31.806 31.806">
+                                <g>
+                                    <g>
+                                        <path d="M1.286,12.465c-0.685,0.263-1.171,0.879-1.268,1.606c-0.096,0.728,0.213,1.449,0.806,1.88l6.492,4.724L30.374,2.534
+			L9.985,22.621l8.875,6.458c0.564,0.41,1.293,0.533,1.964,0.33c0.67-0.204,1.204-0.713,1.444-1.368l9.494-25.986
+			c0.096-0.264,0.028-0.559-0.172-0.756c-0.199-0.197-0.494-0.259-0.758-0.158L1.286,12.465z"/>
+                                        <path d="M5.774,22.246l0.055,0.301l1.26,6.889c0.094,0.512,0.436,0.941,0.912,1.148c0.476,0.206,1.025,0.162,1.461-0.119
+			c1.755-1.132,4.047-2.634,3.985-2.722L5.774,22.246z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </a>
 
-<section class="contact">
-    Contact
+                    <div class="c-i-label"> 91aman@gmail.com</div>
+                </li>
+                <li class="c-item">
+                    <a href="https://www.google.co.in/maps/place/Vipul+Greens,+Sohna+Rd,+Sector+48,+Gurgaon,+Haryana+122001,+India/@28.416313,77.037916,17z?hl=en" target="_blank">
+                        <div class="c-i-icon">
+                            <svg class="c-ii-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 466.583 466.582">
+                                <g>
+                                    <path d="M233.292,0c-85.1,0-154.334,69.234-154.334,154.333c0,34.275,21.887,90.155,66.908,170.834
+		c31.846,57.063,63.168,104.643,64.484,106.64l22.942,34.775l22.941-34.774c1.317-1.998,32.641-49.577,64.483-106.64
+		c45.023-80.68,66.908-136.559,66.908-170.834C387.625,69.234,318.391,0,233.292,0z M233.292,233.291c-44.182,0-80-35.817-80-80
+		s35.818-80,80-80c44.182,0,80,35.817,80,80S277.473,233.291,233.292,233.291z"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="c-i-label"> 1402/3 Vipul Greens, Gurgaon</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </section>
 </body>
 </html>
