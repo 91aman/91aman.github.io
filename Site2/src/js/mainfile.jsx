@@ -9,7 +9,7 @@ import ClassNames from 'classnames';
 export default React.createClass({
     getInitialState() {
         return {
-            active: true
+            active: false
         }
     },
     render() {
