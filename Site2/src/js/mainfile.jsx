@@ -45,9 +45,9 @@ export default React.createClass({
     },
 
     componentDidMount() {
-        $(window).scroll(function () {
-            var that = this;
-            console.log('abcs');
-        });
+        //$(window).scroll(function () {
+        //    var that = this;
+        //    console.log('abcs');
+        //});
     }
 });
