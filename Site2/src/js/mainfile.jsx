@@ -1,21 +1,26 @@
 import React from "react";
 import ReactDOM from 'react-dom';
+import Reflux from 'reflux';
 import Intro from './intro.jsx';
 import NavMenu from './navMenu.jsx';
 import $ from 'jquery';
 import FloatingActionButton from 'material-ui/lib/floating-action-button';
 import ClassNames from 'classnames';
+import AppStore from './stores/appStore'
 
 export default React.createClass({
+
+    mixins: [Reflux.connect(AppStore)],
+
     getInitialState() {
         return {
-            active: false
+            active: false,
+            section: 'home'
         }
     },
     render() {
         var that = this;
 
-        console.log('rendered');
         return (
             <div>
                 <div className={ClassNames("nav-btn", {
@@ -32,22 +37,22 @@ export default React.createClass({
                     </FloatingActionButton>
                 </div>
                 <NavMenu open={that.state.active}/>
-                <section ref="section1" className="section intro">
+                <section ref="home" className="section home">
                     <Intro/>
                 </section>
-                <section ref="section2" className="section about-me"></section>
-                <section ref="section3" className="section prof-exp"></section>
-                <section ref="section4" className="section achievements"></section>
-                <section ref="section5" className="section contact-me"></section>
-
+                <section ref="about" className="section about"></section>
+                <section ref="work" className="section work"></section>
+                <section ref="skills" className="section skills"></section>
+                <section ref="education" className="section education"></section>
+                <section ref="achievements" className="section achievements"></section>
+                <section ref="contact" className="section contact"></section>
             </div>
         );
     },
 
-    componentDidMount() {
-        //$(window).scroll(function () {
-        //    var that = this;
-        //    console.log('abcs');
-        //});
+    componentDidUpdate() {
+        $('html, body').animate({
+            scrollTop: $(this.refs[this.state.section]).offset().top
+        }, 2000);
     }
 });
