@@ -15,7 +15,17 @@ import _ from 'lodash';
 import AppActions from'./actions/appActions';
 import Sections from './constants/sections';
 
+
+//added 250ms delay to make button ripple effect visible.
+var onItemClick = (key) => {
+    window.setTimeout(function () {
+        AppActions.onNavClick(key);
+    }, 250);
+};
+
 export default React.createClass({
+
+
     getDefaultProps() {
         return {
             open: false
@@ -32,7 +42,7 @@ export default React.createClass({
                 fontSize: '24px',
                 lineHeight: '24px',
                 margin: '10px'
-            }} key={key} onClick={_.partial(AppActions.onNavClick, key)}/>
+            }} key={key} onClick={_.partial(onItemClick, key)}/>
         });
         return (
 
