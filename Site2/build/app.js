@@ -21191,7 +21191,7 @@
 /* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -21204,7 +21204,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = _react2.default.createClass({
-	    displayName: 'sectionBase',
+	    displayName: "sectionBase",
 	    getDefaultProp: function getDefaultProp() {
 	        return {
 	            section: {}
@@ -21214,19 +21214,23 @@
 	        var section = this.props.section;
 
 	        return _react2.default.createElement(
-	            'div',
+	            "div",
 	            { className: 's-container' },
 	            _react2.default.createElement(
-	                'div',
-	                { className: 's-header' },
+	                "div",
+	                { className: "s-header-cont" },
 	                _react2.default.createElement(
-	                    'div',
-	                    { className: 's-title' },
-	                    section.title
+	                    "div",
+	                    { className: 's-header' },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: 's-title' },
+	                        section.title
+	                    )
 	                )
 	            ),
 	            _react2.default.createElement(
-	                'div',
+	                "div",
 	                { className: 'section-body' },
 	                _react2.default.createElement(section.body, { section: section })
 	            )
@@ -61144,7 +61148,7 @@
 
 
 	// module
-	exports.push([module.id, "html, body {\n  height: 100%; }\n\nbody {\n  margin: 0;\n  font-family: sans-serif; }\n\n.nav-btn {\n  position: fixed;\n  top: 24px;\n  right: 24px;\n  z-index: 101; }\n  .nav-btn .nav-btn-icn {\n    width: 32px;\n    position: relative;\n    margin: auto; }\n  .nav-btn .btn-line {\n    background: #FFF;\n    border: none;\n    height: 4px;\n    width: 100%;\n    position: absolute;\n    top: 0;\n    left: 0;\n    transition: all .35s ease;\n    cursor: pointer; }\n    .nav-btn .btn-line:nth-of-type(1) {\n      top: 18px; }\n    .nav-btn .btn-line:nth-of-type(2) {\n      top: 26px; }\n    .nav-btn .btn-line:nth-of-type(3) {\n      top: 34px; }\n  .nav-btn.active .top {\n    transform: translateY(8px) translateX(0) rotate(45deg);\n    background: #FFF; }\n  .nav-btn.active .middle {\n    opacity: 0;\n    background: #FFF; }\n  .nav-btn.active .bottom {\n    transform: translateY(-8px) translateX(0) rotate(-45deg);\n    background: #FFF; }\n\n.section {\n  height: 100vh;\n  width: 100%;\n  box-sizing: border-box; }\n  .section .s-container {\n    padding: 20px 50px; }\n  .section .s-header {\n    text-align: center;\n    margin: auto;\n    display: table;\n    position: relative;\n    color: #666; }\n    .section .s-header:before {\n      content: \"------- {\";\n      position: absolute;\n      left: -293px;\n      font-size: 100px;\n      top: -5px;\n      color: #aaa; }\n    .section .s-header:after {\n      content: \"} -------\";\n      position: absolute;\n      right: -293px;\n      font-size: 100px;\n      top: -5px;\n      color: #aaa; }\n  .section .s-title {\n    text-transform: uppercase;\n    margin: 10px;\n    font-size: 40px;\n    padding: 30px 80px; }\n  .section .s-subTitle {\n    line-height: 1.4;\n    font-size: 18px; }\n  .section img {\n    height: 100%;\n    width: 100%; }\n\n.skill-cont {\n  width: 100px;\n  height: 100px;\n  border: 1px solid;\n  border-radius: 50%;\n  text-align: center;\n  background: #C8E6C9;\n  cursor: pointer;\n  -webkit-animation-name: linkQuake;\n  -webkit-animation-duration: 2000ms;\n  -webkit-transform-origin: 50% 50%;\n  -webkit-animation-timing-function: linear;\n  -webkit-animation-iteration-count: infinite;\n  -moz-animation-iteration-count: infinite; }\n\n.sk-icon {\n  height: 40px;\n  width: 40px;\n  margin: auto;\n  margin-top: 17px; }\n\n.sk-label {\n  margin-top: 7px; }\n\n@-webkit-keyframes thumb {\n  0% {\n    -webkit-transform: scale(1); }\n  50% {\n    -webkit-transform: scale(0.9); }\n  100% {\n    -webkit-transform: scale(1); } }\n\n@-webkit-keyframes linkQuake {\n  /* Safari and Chrome */\n  0% {\n    -webkit-transform: translate(2px, 1px) rotate(0deg); }\n  10% {\n    -webkit-transform: translate(-1px, -2px) rotate(-1deg); }\n  20% {\n    -webkit-transform: translate(-3px, 0px) rotate(1deg); }\n  30% {\n    -webkit-transform: translate(0px, 2px) rotate(0deg); }\n  40% {\n    -webkit-transform: translate(1px, -1px) rotate(1deg); }\n  50% {\n    -webkit-transform: translate(-1px, 1px) rotate(-1deg); }\n  60% {\n    -webkit-transform: translate(-3px, -2px) rotate(0deg); }\n  70% {\n    -webkit-transform: translate(2px, 1px) rotate(-1deg); }\n  80% {\n    -webkit-transform: translate(-1px, -2px) rotate(1deg); }\n  90% {\n    -webkit-transform: translate(2px, -1px) rotate(0deg); }\n  100% {\n    -webkit-transform: translate(1px, -2px) rotate(-1deg); } }\n", ""]);
+	exports.push([module.id, "html, body {\n  height: 100%; }\n\nbody {\n  margin: 0;\n  font-family: sans-serif; }\n\n.nav-btn {\n  position: fixed;\n  top: 24px;\n  right: 24px;\n  z-index: 101; }\n  .nav-btn .nav-btn-icn {\n    width: 32px;\n    position: relative;\n    margin: auto; }\n  .nav-btn .btn-line {\n    background: #FFF;\n    border: none;\n    height: 4px;\n    width: 100%;\n    position: absolute;\n    top: 0;\n    left: 0;\n    transition: all .35s ease;\n    cursor: pointer; }\n    .nav-btn .btn-line:nth-of-type(1) {\n      top: 18px; }\n    .nav-btn .btn-line:nth-of-type(2) {\n      top: 26px; }\n    .nav-btn .btn-line:nth-of-type(3) {\n      top: 34px; }\n  .nav-btn.active .top {\n    transform: translateY(8px) translateX(0) rotate(45deg);\n    background: #FFF; }\n  .nav-btn.active .middle {\n    opacity: 0;\n    background: #FFF; }\n  .nav-btn.active .bottom {\n    transform: translateY(-8px) translateX(0) rotate(-45deg);\n    background: #FFF; }\n\n.section {\n  height: 100vh;\n  width: 100%;\n  box-sizing: border-box;\n  background: #FDF3E7; }\n  .section .s-header-cont {\n    background: #C63D0F;\n    padding: 30px 0 20px; }\n  .section .s-header {\n    text-align: center;\n    margin: auto;\n    display: table;\n    position: relative;\n    color: #eee; }\n    .section .s-header:before {\n      content: \"------- {\";\n      position: absolute;\n      left: -293px;\n      font-size: 100px;\n      top: -3px;\n      color: #ddd; }\n    .section .s-header:after {\n      content: \"} -------\";\n      position: absolute;\n      right: -293px;\n      font-size: 100px;\n      top: -3px;\n      color: #ddd; }\n  .section .s-title {\n    text-transform: uppercase;\n    margin: 10px;\n    font-size: 40px;\n    padding: 30px 50px; }\n  .section .s-subTitle {\n    line-height: 1.4;\n    font-size: 18px; }\n  .section img {\n    height: 100%;\n    width: 100%; }\n\n.skill-cont {\n  width: 100px;\n  height: 100px;\n  border: 1px solid;\n  border-radius: 50%;\n  text-align: center;\n  background: #C8E6C9;\n  cursor: pointer;\n  -webkit-animation-name: linkQuake;\n  -webkit-animation-duration: 2000ms;\n  -webkit-transform-origin: 50% 50%;\n  -webkit-animation-timing-function: linear;\n  -webkit-animation-iteration-count: infinite;\n  -moz-animation-iteration-count: infinite; }\n\n.sk-icon {\n  height: 40px;\n  width: 40px;\n  margin: auto;\n  margin-top: 17px; }\n\n.sk-label {\n  margin-top: 7px; }\n\n@-webkit-keyframes thumb {\n  0% {\n    -webkit-transform: scale(1); }\n  50% {\n    -webkit-transform: scale(0.9); }\n  100% {\n    -webkit-transform: scale(1); } }\n\n@-webkit-keyframes linkQuake {\n  /* Safari and Chrome */\n  0% {\n    -webkit-transform: translate(2px, 1px) rotate(0deg); }\n  10% {\n    -webkit-transform: translate(-1px, -2px) rotate(-1deg); }\n  20% {\n    -webkit-transform: translate(-3px, 0px) rotate(1deg); }\n  30% {\n    -webkit-transform: translate(0px, 2px) rotate(0deg); }\n  40% {\n    -webkit-transform: translate(1px, -1px) rotate(1deg); }\n  50% {\n    -webkit-transform: translate(-1px, 1px) rotate(-1deg); }\n  60% {\n    -webkit-transform: translate(-3px, -2px) rotate(0deg); }\n  70% {\n    -webkit-transform: translate(2px, 1px) rotate(-1deg); }\n  80% {\n    -webkit-transform: translate(-1px, -2px) rotate(1deg); }\n  90% {\n    -webkit-transform: translate(2px, -1px) rotate(0deg); }\n  100% {\n    -webkit-transform: translate(1px, -2px) rotate(-1deg); } }\n", ""]);
 
 	// exports
 

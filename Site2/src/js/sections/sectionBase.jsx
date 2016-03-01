@@ -16,9 +16,11 @@ export default React.createClass({
 
         return (
             <div className={'s-container'}>
-                <div className={'s-header'}>
-                    <div className={'s-title'}>
+                <div className="s-header-cont">
+                    <div className={'s-header'}>
+                        <div className={'s-title'}>
                     {section.title}
+                        </div>
                     </div>
                 </div>
                 <div className={'section-body'}>
