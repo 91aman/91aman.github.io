@@ -1,0 +1,142 @@
+
+.intro-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000;
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1.5);
+  }
+}
+
+@keyframes rotate180 {
+  0% {
+    transform: rotate(0deg) scale(1.25);
+  }
+
+  100% {
+    transform: rotate(180deg) skewX(1);
+  }
+}
+
+@keyframes rotate90 {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  100% {
+    transform: rotate(90deg) scale(1.5);
+  }
+}
+
+polygon {
+  fill: white;
+  opacity: 0.1;
+  transform-origin: center center;
+  backface-visibility: hidden;
+  animation: rotate360 30s linear infinite alternate-reverse;
+
+  &:nth-child(2n) {
+    animation-name: rotate180;
+    animation-duration: 15s;
+    animation-direction: alternate;
+  }
+
+  &:nth-child(3n) {
+    animation-name: rotate90;
+    animation-duration: 10s;
+  }
+
+  &:nth-child(5n) {
+    animation-duration: 30s;
+    animation-direction: alternate-reverse;
+  }
+}
+
+.intro-content {
+  color: white;
+  top: 45%;
+  text-align: center;
+  position: absolute;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.intro-image-cont{
+  height: 250px;
+  width: 250px;
+  margin: auto;
+}
+
+.intro-image {
+  border: 5px solid #333;
+  border-radius: 50%;
+}
+
+.intro-title {
+  font-size: 75px;
+  width: 414px;
+  border-bottom: solid rgba(255, 255, 255, 0.5) 1px;
+  margin: 25px auto 40px;
+  padding-bottom: 20px;
+  color: rgb(220, 220, 220);
+}
+
+.intro-sub-title {
+  font-size: 16px;
+  color: #9b9894;
+  font-weight: 100;
+}
+
+.intro-footer {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+}
+
+.intro-scroll {
+  width: 30px;
+  margin: auto;
+  cursor: pointer;
+  -webkit-animation: scroll-anim 1s infinite linear;
+  -moz-animation: scroll-anim 1s infinite linear;
+  -o-animation: scroll-anim 1s infinite linear;
+  animation: scroll-anim 1s infinite linear;
+}
+
+@-webkit-keyframes scroll-anim {
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+@-moz-keyframes scroll-anim {
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+@-o-keyframes scroll-anim {
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes scroll-anim {
+
+  50% {
+    transform: translateY(10px);
+  }
+}

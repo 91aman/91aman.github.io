@@ -11,34 +11,52 @@ import SkillsIcon from 'material-ui/lib/svg-icons/action/build';
 import SchoolIcon from 'material-ui/lib/svg-icons/social/school';
 import AchievementsIcon from 'material-ui/lib/svg-icons/action/stars';
 import ContactIcon from 'material-ui/lib/svg-icons/communication/contacts';
+import Skills from '../sections/skills.jsx';
+import Intro from '../sections/intro/intro.jsx';
+import About from '../sections/about.jsx';
 
 export default {
     home: {
-        label: 'Home',
-        icon: HomeIcon
+        title: 'Home',
+        subTitle: '',
+        icon: HomeIcon,
+        body: Intro,
+        ignoreSection: true
     },
     about: {
-        label: 'About',
-        icon: AboutIcon
+        title: 'About',
+        subTitle: '',
+        icon: AboutIcon,
+        body: About
     },
     work: {
-        label: 'Work',
-        icon: WorkIcon
+        title: 'Work',
+        subTitle: '',
+        icon: WorkIcon,
+        body: About
     },
     skills: {
-        label: 'Skills',
-        icon: SkillsIcon
-    },
-    education: {
-        label: 'Education',
-        icon: SchoolIcon
-    },
-    achievements: {
-        label: 'Achievements',
-        icon: AchievementsIcon
-    },
-    contact: {
-        label: 'Contact',
-        icon: ContactIcon
-    }
+        title: "Skills & Expertise",
+        subTitle: "I've been developing my skill–set to focus on what’s most suited to getting the job done quickly and effectively.",
+        icon: SkillsIcon,
+        body: About
+},
+education: {
+    title: 'Education',
+    subTitle: '',
+    icon: SchoolIcon,
+    body: About
+},
+achievements: {
+    title: 'Achievements',
+    subTitle: '',
+    icon: AchievementsIcon,
+    body: About
+},
+contact: {
+    title: 'Contact',
+    subTitle: '',
+    icon: ContactIcon,
+    body: About
+}
 };

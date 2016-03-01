@@ -1,12 +1,14 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 import Reflux from 'reflux';
-import Intro from './intro.jsx';
-import NavMenu from './navMenu.jsx';
+//import Intro from './intro.jsx';
+import SectionBase from './sections/sectionBase.jsx';
+import NavMenu from './sections/navMenu/navMenu.jsx';
 import $ from 'jquery';
 import FloatingActionButton from 'material-ui/lib/floating-action-button';
 import ClassNames from 'classnames';
-import AppStore from './stores/appStore'
+import AppStore from './stores/appStore';
+import Sections from './constants/sections';
 
 export default React.createClass({
 
@@ -37,22 +39,27 @@ export default React.createClass({
                     </FloatingActionButton>
                 </div>
                 <NavMenu open={that.state.active}/>
-                <section ref="home" className="section home">
-                    <Intro/>
-                </section>
-                <section ref="about" className="section about"></section>
-                <section ref="work" className="section work"></section>
-                <section ref="skills" className="section skills"></section>
-                <section ref="education" className="section education"></section>
-                <section ref="achievements" className="section achievements"></section>
-                <section ref="contact" className="section contact"></section>
+            {_.map(Sections, (section, key) => {
+
+                if (section.ignoreSection) {
+                    return (<section ref={key} key={key} className={"section " + key}>
+                        <section.body/>
+                    </section>)
+                }
+
+                return (
+                    <section ref={key} key={key} className={"section " + key}>
+                        <SectionBase section={section}/>
+                    </section>
+                )
+            })}
             </div>
         );
     },
 
     componentDidUpdate() {
-        $('html, body').animate({
-            scrollTop: $(this.refs[this.state.section]).offset().top
-        }, 2000);
+        //$('html, body').animate({
+        //    scrollTop: $(this.refs[this.state.section]).offset().top
+        //}, 2000);
     }
 });

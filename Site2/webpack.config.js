@@ -3,22 +3,27 @@ module.exports = {
     output: {
         filename: './build/app.js'
     },
-    devtool: 'eval',
+    //devtool: 'eval',
     module: {
-    loaders: [
-      { 
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader',
-        query: {
-        presets: ['es2015','react']
-          }
-    },
-    { 
-        test: /\.scss$/,
-        exclude: /node_modules/,
-        loader: 'style-loader!css-loader!sass-loader'
+        loaders: [
+            {
+                test: /\.svg$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader?presets[]=es2015&presets[]=react!svg-react'
+            },
+            {
+                test: /\.jsx?$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader',
+                query: {
+                    presets: ['es2015', 'react']
+                }
+            },
+            {
+                test: /\.scss$/,
+                exclude: /node_modules/,
+                loader: 'style-loader!css-loader!sass-loader'
+            }
+        ]
     }
-    ]
-  }
 };

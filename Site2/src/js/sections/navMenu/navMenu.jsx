@@ -5,15 +5,15 @@
 
 import React from "react";
 import ReactDOM from 'react-dom';
-import Intro from './intro.jsx';
 import $ from 'jquery';
 import FloatingActionButton from 'material-ui/lib/floating-action-button';
 import List from 'material-ui/lib/lists/list';
 import ListItem from 'material-ui/lib/lists/list-item';
 import ClassNames from 'classnames';
 import _ from 'lodash';
-import AppActions from'./actions/appActions';
-import Sections from './constants/sections';
+import AppActions from'../../actions/appActions';
+import Sections from '../../constants/sections';
+import "../navMenu/navMenu.scss";
 
 
 //added 250ms delay to make button ripple effect visible.
@@ -34,7 +34,7 @@ export default React.createClass({
     render() {
         var ListItemEl = _.map(Sections, (section, key) => {
 
-            return <ListItem primaryText={section.label} leftIcon={<section.icon style={{
+            return <ListItem primaryText={section.title} leftIcon={<section.icon style={{
                 fill: "#fff",
                 padding: '16px'
             }} />} style={{
