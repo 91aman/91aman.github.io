@@ -15,6 +15,7 @@ import Skills from '../sections/skills.jsx';
 import Intro from '../sections/intro/intro.jsx';
 import About from '../sections/about.jsx';
 import Education from '../sections/education/education.jsx';
+import Work from '../sections/work/work.jsx';
 
 export default {
     home: {
@@ -34,30 +35,30 @@ export default {
         title: 'Work',
         subTitle: '',
         icon: WorkIcon,
-        body: About
+        body: Work
     },
     skills: {
         title: "Skills & Expertise",
         subTitle: "I've been developing my skill–set to focus on what’s most suited to getting the job done quickly and effectively.",
         icon: SkillsIcon,
         body: About
-},
-education: {
-    title: 'Education',
-    subTitle: '',
-    icon: SchoolIcon,
-    body: Education
-},
-achievements: {
-    title: 'Achievements',
-    subTitle: '',
-    icon: AchievementsIcon,
-    body: About
-},
-contact: {
-    title: 'Contact',
-    subTitle: '',
-    icon: ContactIcon,
-    body: About
-}
+    },
+    education: {
+        title: 'Education',
+        subTitle: '',
+        icon: SchoolIcon,
+        body: Education
+    },
+    achievements: {
+        title: 'Achievements',
+        subTitle: '',
+        icon: AchievementsIcon,
+        body: About
+    },
+    contact: {
+        title: 'Contact',
+        subTitle: '',
+        icon: ContactIcon,
+        body: About
+    }
 };

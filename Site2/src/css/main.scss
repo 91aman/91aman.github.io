@@ -65,11 +65,19 @@ body {
 
 //sections
 .section {
-  height: 100vh;
+  //height: 100vh;
   width: 100%;
   //padding: 50px;
   box-sizing: border-box;
   background: #FDF3E7;
+
+  &.home{
+    height: 100vh;
+  }
+
+  .section-body{
+    padding: 100px;
+  }
 
   .s-container {
 
