@@ -1,0 +1,63 @@
+.education-container {
+  padding: 100px;
+
+  .education-card {
+    width: 33.3%;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .education-paper {
+    margin: auto;
+  }
+
+  .edu-level {
+    font-size: 17px;
+    padding: 20px 0;
+    background: #eee;
+    color: #666;
+  }
+
+  .edu-logo {
+    width: 175px;
+    height: 175px;
+    margin: 32px auto 25px;
+  }
+
+  .edu-name {
+    font-size: 21px;
+    margin: 15px;
+    color: #444;
+  }
+
+  .edu-year {
+    margin: 15px;
+    color: #999;
+  }
+
+  .edu-result {
+    height: 30px;
+    position: relative;
+  }
+
+  .edu-r-count {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 30px;
+    color: white;
+  }
+
+  .edu-r-percentage {
+    height: 100%;
+    background: green;
+  }
+
+  .edu-degree{
+    font-size: 13px;
+    margin-top: 12px;
+    color: #888;
+  }
+
+}

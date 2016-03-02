@@ -14,6 +14,7 @@ import ContactIcon from 'material-ui/lib/svg-icons/communication/contacts';
 import Skills from '../sections/skills.jsx';
 import Intro from '../sections/intro/intro.jsx';
 import About from '../sections/about.jsx';
+import Education from '../sections/education/education.jsx';
 
 export default {
     home: {
@@ -45,7 +46,7 @@ education: {
     title: 'Education',
     subTitle: '',
     icon: SchoolIcon,
-    body: About
+    body: Education
 },
 achievements: {
     title: 'Achievements',

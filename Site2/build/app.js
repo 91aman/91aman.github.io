@@ -49580,12 +49580,11 @@
 
 	var _about2 = _interopRequireDefault(_about);
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	var _education = __webpack_require__(295);
 
-	/**
-	 * Created by amanjain on 14/01/16 at 9:39 AM.
-	 * Description : Constant file for sections.
-	 */
+	var _education2 = _interopRequireDefault(_education);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = {
 	    home: {
@@ -49617,7 +49616,7 @@
 	        title: 'Education',
 	        subTitle: '',
 	        icon: _school2.default,
-	        body: _about2.default
+	        body: _education2.default
 	    },
 	    achievements: {
 	        title: 'Achievements',
@@ -49631,7 +49630,10 @@
 	        icon: _contacts2.default,
 	        body: _about2.default
 	    }
-	};
+	}; /**
+	    * Created by amanjain on 14/01/16 at 9:39 AM.
+	    * Description : Constant file for sections.
+	    */
 
 /***/ },
 /* 246 */
@@ -61148,10 +61150,194 @@
 
 
 	// module
-	exports.push([module.id, "html, body {\n  height: 100%; }\n\nbody {\n  margin: 0;\n  font-family: sans-serif; }\n\n.nav-btn {\n  position: fixed;\n  top: 24px;\n  right: 24px;\n  z-index: 101; }\n  .nav-btn .nav-btn-icn {\n    width: 32px;\n    position: relative;\n    margin: auto; }\n  .nav-btn .btn-line {\n    background: #FFF;\n    border: none;\n    height: 4px;\n    width: 100%;\n    position: absolute;\n    top: 0;\n    left: 0;\n    transition: all .35s ease;\n    cursor: pointer; }\n    .nav-btn .btn-line:nth-of-type(1) {\n      top: 18px; }\n    .nav-btn .btn-line:nth-of-type(2) {\n      top: 26px; }\n    .nav-btn .btn-line:nth-of-type(3) {\n      top: 34px; }\n  .nav-btn.active .top {\n    transform: translateY(8px) translateX(0) rotate(45deg);\n    background: #FFF; }\n  .nav-btn.active .middle {\n    opacity: 0;\n    background: #FFF; }\n  .nav-btn.active .bottom {\n    transform: translateY(-8px) translateX(0) rotate(-45deg);\n    background: #FFF; }\n\n.section {\n  height: 100vh;\n  width: 100%;\n  box-sizing: border-box;\n  background: #FDF3E7; }\n  .section .s-header-cont {\n    background: #C63D0F;\n    padding: 30px 0 20px; }\n  .section .s-header {\n    text-align: center;\n    margin: auto;\n    display: table;\n    position: relative;\n    color: #eee; }\n    .section .s-header:before {\n      content: \"------- {\";\n      position: absolute;\n      left: -293px;\n      font-size: 100px;\n      top: -3px;\n      color: #ddd; }\n    .section .s-header:after {\n      content: \"} -------\";\n      position: absolute;\n      right: -293px;\n      font-size: 100px;\n      top: -3px;\n      color: #ddd; }\n  .section .s-title {\n    text-transform: uppercase;\n    margin: 10px;\n    font-size: 40px;\n    padding: 30px 50px; }\n  .section .s-subTitle {\n    line-height: 1.4;\n    font-size: 18px; }\n  .section img {\n    height: 100%;\n    width: 100%; }\n\n.skill-cont {\n  width: 100px;\n  height: 100px;\n  border: 1px solid;\n  border-radius: 50%;\n  text-align: center;\n  background: #C8E6C9;\n  cursor: pointer;\n  -webkit-animation-name: linkQuake;\n  -webkit-animation-duration: 2000ms;\n  -webkit-transform-origin: 50% 50%;\n  -webkit-animation-timing-function: linear;\n  -webkit-animation-iteration-count: infinite;\n  -moz-animation-iteration-count: infinite; }\n\n.sk-icon {\n  height: 40px;\n  width: 40px;\n  margin: auto;\n  margin-top: 17px; }\n\n.sk-label {\n  margin-top: 7px; }\n\n@-webkit-keyframes thumb {\n  0% {\n    -webkit-transform: scale(1); }\n  50% {\n    -webkit-transform: scale(0.9); }\n  100% {\n    -webkit-transform: scale(1); } }\n\n@-webkit-keyframes linkQuake {\n  /* Safari and Chrome */\n  0% {\n    -webkit-transform: translate(2px, 1px) rotate(0deg); }\n  10% {\n    -webkit-transform: translate(-1px, -2px) rotate(-1deg); }\n  20% {\n    -webkit-transform: translate(-3px, 0px) rotate(1deg); }\n  30% {\n    -webkit-transform: translate(0px, 2px) rotate(0deg); }\n  40% {\n    -webkit-transform: translate(1px, -1px) rotate(1deg); }\n  50% {\n    -webkit-transform: translate(-1px, 1px) rotate(-1deg); }\n  60% {\n    -webkit-transform: translate(-3px, -2px) rotate(0deg); }\n  70% {\n    -webkit-transform: translate(2px, 1px) rotate(-1deg); }\n  80% {\n    -webkit-transform: translate(-1px, -2px) rotate(1deg); }\n  90% {\n    -webkit-transform: translate(2px, -1px) rotate(0deg); }\n  100% {\n    -webkit-transform: translate(1px, -2px) rotate(-1deg); } }\n", ""]);
+	exports.push([module.id, "html, body {\n  height: 100%; }\n\nbody {\n  margin: 0;\n  font-family: sans-serif; }\n\n.nav-btn {\n  position: fixed;\n  top: 24px;\n  right: 24px;\n  z-index: 101; }\n  .nav-btn .nav-btn-icn {\n    width: 32px;\n    position: relative;\n    margin: auto; }\n  .nav-btn .btn-line {\n    background: #FFF;\n    border: none;\n    height: 4px;\n    width: 100%;\n    position: absolute;\n    top: 0;\n    left: 0;\n    transition: all .35s ease;\n    cursor: pointer; }\n    .nav-btn .btn-line:nth-of-type(1) {\n      top: 18px; }\n    .nav-btn .btn-line:nth-of-type(2) {\n      top: 26px; }\n    .nav-btn .btn-line:nth-of-type(3) {\n      top: 34px; }\n  .nav-btn.active .top {\n    transform: translateY(8px) translateX(0) rotate(45deg);\n    background: #FFF; }\n  .nav-btn.active .middle {\n    opacity: 0;\n    background: #FFF; }\n  .nav-btn.active .bottom {\n    transform: translateY(-8px) translateX(0) rotate(-45deg);\n    background: #FFF; }\n\n.section {\n  height: 100vh;\n  width: 100%;\n  box-sizing: border-box;\n  background: #FDF3E7; }\n  .section .s-header-cont {\n    background: #C63D0F;\n    padding: 30px 0 20px; }\n  .section .s-header {\n    text-align: center;\n    margin: auto;\n    display: table;\n    position: relative;\n    color: #eee; }\n    .section .s-header:before {\n      content: \"------- {\";\n      position: absolute;\n      left: -293px;\n      font-size: 100px;\n      top: -3px;\n      color: #ddd; }\n    .section .s-header:after {\n      content: \"} -------\";\n      position: absolute;\n      right: -293px;\n      font-size: 100px;\n      top: -3px;\n      color: #ddd; }\n  .section .s-title {\n    text-transform: uppercase;\n    margin: 10px;\n    font-size: 40px;\n    padding: 30px 50px; }\n  .section .s-subTitle {\n    line-height: 1.4;\n    font-size: 18px; }\n  .section img {\n    height: 100%;\n    width: 100%; }\n  .section a {\n    text-decoration: inherit;\n    color: inherit;\n    cursor: pointer; }\n\n.skill-cont {\n  width: 100px;\n  height: 100px;\n  border: 1px solid;\n  border-radius: 50%;\n  text-align: center;\n  background: #C8E6C9;\n  cursor: pointer;\n  -webkit-animation-name: linkQuake;\n  -webkit-animation-duration: 2000ms;\n  -webkit-transform-origin: 50% 50%;\n  -webkit-animation-timing-function: linear;\n  -webkit-animation-iteration-count: infinite;\n  -moz-animation-iteration-count: infinite; }\n\n.sk-icon {\n  height: 40px;\n  width: 40px;\n  margin: auto;\n  margin-top: 17px; }\n\n.sk-label {\n  margin-top: 7px; }\n\n@-webkit-keyframes thumb {\n  0% {\n    -webkit-transform: scale(1); }\n  50% {\n    -webkit-transform: scale(0.9); }\n  100% {\n    -webkit-transform: scale(1); } }\n\n@-webkit-keyframes linkQuake {\n  /* Safari and Chrome */\n  0% {\n    -webkit-transform: translate(2px, 1px) rotate(0deg); }\n  10% {\n    -webkit-transform: translate(-1px, -2px) rotate(-1deg); }\n  20% {\n    -webkit-transform: translate(-3px, 0px) rotate(1deg); }\n  30% {\n    -webkit-transform: translate(0px, 2px) rotate(0deg); }\n  40% {\n    -webkit-transform: translate(1px, -1px) rotate(1deg); }\n  50% {\n    -webkit-transform: translate(-1px, 1px) rotate(-1deg); }\n  60% {\n    -webkit-transform: translate(-3px, -2px) rotate(0deg); }\n  70% {\n    -webkit-transform: translate(2px, 1px) rotate(-1deg); }\n  80% {\n    -webkit-transform: translate(-1px, -2px) rotate(1deg); }\n  90% {\n    -webkit-transform: translate(2px, -1px) rotate(0deg); }\n  100% {\n    -webkit-transform: translate(1px, -2px) rotate(-1deg); } }\n", ""]);
 
 	// exports
 
+
+/***/ },
+/* 295 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	__webpack_require__(296);
+
+	var _paper = __webpack_require__(227);
+
+	var _paper2 = _interopRequireDefault(_paper);
+
+	var _education = __webpack_require__(298);
+
+	var _education2 = _interopRequireDefault(_education);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	//DUMB
+	/**
+	 * Created by amanjain on 02/03/16 at 1:33 AM.
+	 * Description :
+	 */
+
+	exports.default = _react2.default.createClass({
+	    displayName: "education",
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            "div",
+	            { className: "education-container" },
+	            _.map(_education2.default, function (education, key) {
+	                return _react2.default.createElement(
+	                    "div",
+	                    { key: key, className: "education-card" },
+	                    _react2.default.createElement(
+	                        _paper2.default,
+	                        { key: key, zDepth: 2, className: "education-paper", style: {
+	                                width: 300
+	                            } },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "edu-level" },
+	                            education.level,
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "edu-degree" },
+	                                education.degree
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "edu-logo" },
+	                            _react2.default.createElement("img", { src: education.school.logo })
+	                        ),
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "edu-name" },
+	                            _react2.default.createElement(
+	                                "a",
+	                                { href: education.school.url, target: "_blank" },
+	                                education.school.name
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "edu-year" },
+	                            education.school.year
+	                        ),
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "edu-result" },
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "edu-r-count" },
+	                                education.percentage + ' %'
+	                            ),
+	                            _react2.default.createElement("div", { className: "edu-r-percentage", style: { width: education.percentage * 3 } })
+	                        )
+	                    )
+	                );
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 296 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(297);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(288)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../../node_modules/css-loader/index.js!./../../../../node_modules/sass-loader/index.js!./education.scss", function() {
+				var newContent = require("!!./../../../../node_modules/css-loader/index.js!./../../../../node_modules/sass-loader/index.js!./education.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 297 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(287)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".education-container {\n  padding: 100px; }\n  .education-container .education-card {\n    width: 33.3%;\n    display: inline-block;\n    text-align: center; }\n  .education-container .education-paper {\n    margin: auto; }\n  .education-container .edu-level {\n    font-size: 17px;\n    padding: 20px 0;\n    background: #eee;\n    color: #666; }\n  .education-container .edu-logo {\n    width: 175px;\n    height: 175px;\n    margin: 32px auto 25px; }\n  .education-container .edu-name {\n    font-size: 21px;\n    margin: 15px;\n    color: #444; }\n  .education-container .edu-year {\n    margin: 15px;\n    color: #999; }\n  .education-container .edu-result {\n    height: 30px;\n    position: relative; }\n  .education-container .edu-r-count {\n    height: 100%;\n    position: absolute;\n    left: 50%;\n    transform: translateX(-50%);\n    line-height: 30px;\n    color: white; }\n  .education-container .edu-r-percentage {\n    height: 100%;\n    background: green; }\n  .education-container .edu-degree {\n    font-size: 13px;\n    margin-top: 12px;\n    color: #888; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 298 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	/**
+	 * Created by amanjain on 14/01/16 at 9:39 AM.
+	 * Description : Constant file for sections.
+	 */
+
+	exports.default = {
+	    ug: {
+	        level: 'B.Tech',
+	        degree: 'Information and Communication Technology',
+	        school: {
+	            name: 'DA-IICT',
+	            year: '2010 - 2014',
+	            logo: 'https://ecampus.daiict.ac.in/webapp/intranet/images/2img_daiict02.jpg',
+	            url: 'http://www.daiict.ac.in/daiict/index.html'
+	        },
+	        percentage: 78
+	    },
+	    hs: {
+	        level: 'Higher Secondary',
+	        degree: 'CBSE',
+	        school: {
+	            name: 'Aklank Public School',
+	            year: '2009',
+	            logo: 'http://kulgurcdn-c6c.kxcdn.com/img/school/aklank-public-school-l1i5ok6i.gif',
+	            url: 'http://www.aklankpublicschool.com/'
+	        },
+	        percentage: 84
+	    },
+	    s: {
+	        level: 'Secondary',
+	        degree: 'CBSE',
+	        school: {
+	            name: 'Maharaja Agrasen Vidyalaya',
+	            year: '2007',
+	            logo: 'http://www.batchmates.com/institution/returnimagelogo.aspx?flname=5yy99591_logo.gif',
+	            url: 'http://agrasenvidyalaya.ac.in/'
+	        },
+	        percentage: 91
+	    }
+	};
 
 /***/ }
 /******/ ]);

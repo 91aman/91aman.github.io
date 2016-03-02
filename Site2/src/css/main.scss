@@ -71,11 +71,11 @@ body {
   box-sizing: border-box;
   background: #FDF3E7;
 
-  .s-container{
+  .s-container {
 
   }
 
-  .s-header-cont{
+  .s-header-cont {
     background: #C63D0F;
     padding: 30px 0 20px;
   }
@@ -85,10 +85,10 @@ body {
     margin: auto;
     //border-bottom: 1px solid;
     display: table;
-    position:relative;
+    position: relative;
     color: #eee;
 
-    &:before{
+    &:before {
       content: "------- {";
       position: absolute;
       left: -293px;
@@ -97,7 +97,7 @@ body {
       color: #ddd;
     }
 
-    &:after{
+    &:after {
       content: "} -------";
       position: absolute;
       right: -293px;
@@ -124,14 +124,18 @@ body {
     width: 100%;
   }
 
-//  @for $i from 1 through length($colors) {
-//    &:nth-of-type(#{length($colors)}n+#{$i}) {
-//      background: nth($colors, $i)
-//    }
-//  }
+  a {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  //  @for $i from 1 through length($colors) {
+  //    &:nth-of-type(#{length($colors)}n+#{$i}) {
+  //      background: nth($colors, $i)
+  //    }
+  //  }
 }
-
-
 
 //skills
 
