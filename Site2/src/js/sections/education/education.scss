@@ -8,6 +8,10 @@
 
   .education-paper {
     margin: auto;
+
+    &:hover{
+      transform: scale(1.1);
+    }
   }
 
   .edu-level {
