@@ -52144,6 +52144,12 @@
 	        label: 'nodejs',
 	        logo: 'http://tomnora.com/wp-content/uploads/2016/01/nodejs-logo.png',
 	        url: 'https://nodejs.org/en/'
+	    },
+	    svn: {
+	        id: 'svn',
+	        label: 'subversion',
+	        logo: 'http://www.subversiondownload.com/images/subversion-logo.png',
+	        url: 'https://subversion.apache.org/'
 	    }
 
 	};
