@@ -45,10 +45,12 @@ export default React.createClass({
                                     "skills-cont-wrap": true,
                                     shift: _.contains([6, 7, 8, 9, 10], iter2)
                                 })} key={iter2} data-random={Math.floor(Math.random() * (5 - 1) + 1)} >
-                                    <div className="skills-cont">
+                                    <div className="skills-cont front">
                                         <div className="skill-logo">
                                             <img src={skill.logo}/>
                                         </div>
+                                    </div>
+                                    <div className="skills-cont back">
                                         <div className="skill-label">
                                             <a href={skill.url} target="_blank">{skill.label}</a>
                                         </div>

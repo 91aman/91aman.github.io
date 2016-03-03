@@ -62,7 +62,7 @@
 
 	var _lodash2 = _interopRequireDefault(_lodash);
 
-	var _main = __webpack_require__(301);
+	var _main = __webpack_require__(303);
 
 	var _main2 = _interopRequireDefault(_main);
 
@@ -19713,7 +19713,7 @@
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	var _appStore = __webpack_require__(300);
+	var _appStore = __webpack_require__(302);
 
 	var _appStore2 = _interopRequireDefault(_appStore);
 
@@ -21291,7 +21291,7 @@
 
 	var _sections2 = _interopRequireDefault(_sections);
 
-	__webpack_require__(298);
+	__webpack_require__(300);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -49568,23 +49568,23 @@
 
 	var _contacts2 = _interopRequireDefault(_contacts);
 
-	var _intro = __webpack_require__(255);
+	var _intro = __webpack_require__(253);
 
 	var _intro2 = _interopRequireDefault(_intro);
 
-	var _about = __webpack_require__(289);
+	var _about = __webpack_require__(287);
 
 	var _about2 = _interopRequireDefault(_about);
 
-	var _education = __webpack_require__(290);
+	var _education = __webpack_require__(288);
 
 	var _education2 = _interopRequireDefault(_education);
 
-	var _work = __webpack_require__(294);
+	var _work = __webpack_require__(292);
 
 	var _work2 = _interopRequireDefault(_work);
 
-	var _skills = __webpack_require__(303);
+	var _skills = __webpack_require__(296);
 
 	var _skills2 = _interopRequireDefault(_skills);
 
@@ -49937,9 +49937,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 253 */,
-/* 254 */,
-/* 255 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -49952,15 +49950,15 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _introBackground = __webpack_require__(256);
+	var _introBackground = __webpack_require__(254);
 
 	var _introBackground2 = _interopRequireDefault(_introBackground);
 
-	var _downArrow = __webpack_require__(284);
+	var _downArrow = __webpack_require__(282);
 
 	var _downArrow2 = _interopRequireDefault(_downArrow);
 
-	var _intro = __webpack_require__(285);
+	var _intro = __webpack_require__(283);
 
 	var _intro2 = _interopRequireDefault(_intro);
 
@@ -50013,13 +50011,13 @@
 	});
 
 /***/ },
-/* 256 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var helpers = __webpack_require__(257)(__webpack_require__(158));
+	var helpers = __webpack_require__(255)(__webpack_require__(158));
 
 	module.exports = React.createClass({
 
@@ -50058,10 +50056,10 @@
 	});
 
 /***/ },
-/* 257 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var forEach  = __webpack_require__(258);
+	var forEach  = __webpack_require__(256);
 	var ATTR_KEY = 'data-svgreactloader';
 
 	var MODULE = {
@@ -50107,12 +50105,12 @@
 
 
 /***/ },
-/* 258 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var arrayEach = __webpack_require__(259),
-	    baseEach = __webpack_require__(260),
-	    createForEach = __webpack_require__(281);
+	var arrayEach = __webpack_require__(257),
+	    baseEach = __webpack_require__(258),
+	    createForEach = __webpack_require__(279);
 
 	/**
 	 * Iterates over elements of `collection` invoking `iteratee` for each element.
@@ -50150,7 +50148,7 @@
 
 
 /***/ },
-/* 259 */
+/* 257 */
 /***/ function(module, exports) {
 
 	/**
@@ -50178,11 +50176,11 @@
 
 
 /***/ },
-/* 260 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseForOwn = __webpack_require__(261),
-	    createBaseEach = __webpack_require__(280);
+	var baseForOwn = __webpack_require__(259),
+	    createBaseEach = __webpack_require__(278);
 
 	/**
 	 * The base implementation of `_.forEach` without support for callback
@@ -50199,11 +50197,11 @@
 
 
 /***/ },
-/* 261 */
+/* 259 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseFor = __webpack_require__(262),
-	    keys = __webpack_require__(266);
+	var baseFor = __webpack_require__(260),
+	    keys = __webpack_require__(264);
 
 	/**
 	 * The base implementation of `_.forOwn` without support for callback
@@ -50222,10 +50220,10 @@
 
 
 /***/ },
-/* 262 */
+/* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var createBaseFor = __webpack_require__(263);
+	var createBaseFor = __webpack_require__(261);
 
 	/**
 	 * The base implementation of `baseForIn` and `baseForOwn` which iterates
@@ -50245,10 +50243,10 @@
 
 
 /***/ },
-/* 263 */
+/* 261 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var toObject = __webpack_require__(264);
+	var toObject = __webpack_require__(262);
 
 	/**
 	 * Creates a base function for `_.forIn` or `_.forInRight`.
@@ -50278,10 +50276,10 @@
 
 
 /***/ },
-/* 264 */
+/* 262 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isObject = __webpack_require__(265);
+	var isObject = __webpack_require__(263);
 
 	/**
 	 * Converts `value` to an object if it's not one.
@@ -50298,7 +50296,7 @@
 
 
 /***/ },
-/* 265 */
+/* 263 */
 /***/ function(module, exports) {
 
 	/**
@@ -50332,13 +50330,13 @@
 
 
 /***/ },
-/* 266 */
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var getNative = __webpack_require__(267),
-	    isArrayLike = __webpack_require__(271),
-	    isObject = __webpack_require__(265),
-	    shimKeys = __webpack_require__(275);
+	var getNative = __webpack_require__(265),
+	    isArrayLike = __webpack_require__(269),
+	    isObject = __webpack_require__(263),
+	    shimKeys = __webpack_require__(273);
 
 	/* Native method references for those with the same name as other `lodash` methods. */
 	var nativeKeys = getNative(Object, 'keys');
@@ -50383,10 +50381,10 @@
 
 
 /***/ },
-/* 267 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isNative = __webpack_require__(268);
+	var isNative = __webpack_require__(266);
 
 	/**
 	 * Gets the native function at `key` of `object`.
@@ -50405,11 +50403,11 @@
 
 
 /***/ },
-/* 268 */
+/* 266 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isFunction = __webpack_require__(269),
-	    isObjectLike = __webpack_require__(270);
+	var isFunction = __webpack_require__(267),
+	    isObjectLike = __webpack_require__(268);
 
 	/** Used to detect host constructors (Safari > 5). */
 	var reIsHostCtor = /^\[object .+?Constructor\]$/;
@@ -50459,10 +50457,10 @@
 
 
 /***/ },
-/* 269 */
+/* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isObject = __webpack_require__(265);
+	var isObject = __webpack_require__(263);
 
 	/** `Object#toString` result references. */
 	var funcTag = '[object Function]';
@@ -50503,7 +50501,7 @@
 
 
 /***/ },
-/* 270 */
+/* 268 */
 /***/ function(module, exports) {
 
 	/**
@@ -50521,11 +50519,11 @@
 
 
 /***/ },
-/* 271 */
+/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var getLength = __webpack_require__(272),
-	    isLength = __webpack_require__(274);
+	var getLength = __webpack_require__(270),
+	    isLength = __webpack_require__(272);
 
 	/**
 	 * Checks if `value` is array-like.
@@ -50542,10 +50540,10 @@
 
 
 /***/ },
-/* 272 */
+/* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseProperty = __webpack_require__(273);
+	var baseProperty = __webpack_require__(271);
 
 	/**
 	 * Gets the "length" property value of `object`.
@@ -50563,7 +50561,7 @@
 
 
 /***/ },
-/* 273 */
+/* 271 */
 /***/ function(module, exports) {
 
 	/**
@@ -50583,7 +50581,7 @@
 
 
 /***/ },
-/* 274 */
+/* 272 */
 /***/ function(module, exports) {
 
 	/**
@@ -50609,14 +50607,14 @@
 
 
 /***/ },
-/* 275 */
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isArguments = __webpack_require__(276),
-	    isArray = __webpack_require__(277),
-	    isIndex = __webpack_require__(278),
-	    isLength = __webpack_require__(274),
-	    keysIn = __webpack_require__(279);
+	var isArguments = __webpack_require__(274),
+	    isArray = __webpack_require__(275),
+	    isIndex = __webpack_require__(276),
+	    isLength = __webpack_require__(272),
+	    keysIn = __webpack_require__(277);
 
 	/** Used for native method references. */
 	var objectProto = Object.prototype;
@@ -50656,11 +50654,11 @@
 
 
 /***/ },
-/* 276 */
+/* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isArrayLike = __webpack_require__(271),
-	    isObjectLike = __webpack_require__(270);
+	var isArrayLike = __webpack_require__(269),
+	    isObjectLike = __webpack_require__(268);
 
 	/** Used for native method references. */
 	var objectProto = Object.prototype;
@@ -50696,12 +50694,12 @@
 
 
 /***/ },
-/* 277 */
+/* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var getNative = __webpack_require__(267),
-	    isLength = __webpack_require__(274),
-	    isObjectLike = __webpack_require__(270);
+	var getNative = __webpack_require__(265),
+	    isLength = __webpack_require__(272),
+	    isObjectLike = __webpack_require__(268);
 
 	/** `Object#toString` result references. */
 	var arrayTag = '[object Array]';
@@ -50742,7 +50740,7 @@
 
 
 /***/ },
-/* 278 */
+/* 276 */
 /***/ function(module, exports) {
 
 	/** Used to detect unsigned integer values. */
@@ -50772,14 +50770,14 @@
 
 
 /***/ },
-/* 279 */
+/* 277 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isArguments = __webpack_require__(276),
-	    isArray = __webpack_require__(277),
-	    isIndex = __webpack_require__(278),
-	    isLength = __webpack_require__(274),
-	    isObject = __webpack_require__(265);
+	var isArguments = __webpack_require__(274),
+	    isArray = __webpack_require__(275),
+	    isIndex = __webpack_require__(276),
+	    isLength = __webpack_require__(272),
+	    isObject = __webpack_require__(263);
 
 	/** Used for native method references. */
 	var objectProto = Object.prototype;
@@ -50842,12 +50840,12 @@
 
 
 /***/ },
-/* 280 */
+/* 278 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var getLength = __webpack_require__(272),
-	    isLength = __webpack_require__(274),
-	    toObject = __webpack_require__(264);
+	var getLength = __webpack_require__(270),
+	    isLength = __webpack_require__(272),
+	    toObject = __webpack_require__(262);
 
 	/**
 	 * Creates a `baseEach` or `baseEachRight` function.
@@ -50879,11 +50877,11 @@
 
 
 /***/ },
-/* 281 */
+/* 279 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var bindCallback = __webpack_require__(282),
-	    isArray = __webpack_require__(277);
+	var bindCallback = __webpack_require__(280),
+	    isArray = __webpack_require__(275);
 
 	/**
 	 * Creates a function for `_.forEach` or `_.forEachRight`.
@@ -50905,10 +50903,10 @@
 
 
 /***/ },
-/* 282 */
+/* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var identity = __webpack_require__(283);
+	var identity = __webpack_require__(281);
 
 	/**
 	 * A specialized version of `baseCallback` which only supports `this` binding
@@ -50950,7 +50948,7 @@
 
 
 /***/ },
-/* 283 */
+/* 281 */
 /***/ function(module, exports) {
 
 	/**
@@ -50976,13 +50974,13 @@
 
 
 /***/ },
-/* 284 */
+/* 282 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var helpers = __webpack_require__(257)(__webpack_require__(158));
+	var helpers = __webpack_require__(255)(__webpack_require__(158));
 
 	module.exports = React.createClass({
 
@@ -51010,16 +51008,16 @@
 	});
 
 /***/ },
-/* 285 */
+/* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(286);
+	var content = __webpack_require__(284);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(288)(content, {});
+	var update = __webpack_require__(286)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -51036,10 +51034,10 @@
 	}
 
 /***/ },
-/* 286 */
+/* 284 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(287)();
+	exports = module.exports = __webpack_require__(285)();
 	// imports
 
 
@@ -51050,7 +51048,7 @@
 
 
 /***/ },
-/* 287 */
+/* 285 */
 /***/ function(module, exports) {
 
 	/*
@@ -51106,7 +51104,7 @@
 
 
 /***/ },
-/* 288 */
+/* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -51360,7 +51358,7 @@
 
 
 /***/ },
-/* 289 */
+/* 287 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -51387,7 +51385,7 @@
 	});
 
 /***/ },
-/* 290 */
+/* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -51400,13 +51398,13 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(291);
+	__webpack_require__(289);
 
 	var _paper = __webpack_require__(227);
 
 	var _paper2 = _interopRequireDefault(_paper);
 
-	var _education = __webpack_require__(293);
+	var _education = __webpack_require__(291);
 
 	var _education2 = _interopRequireDefault(_education);
 
@@ -51481,16 +51479,16 @@
 	});
 
 /***/ },
-/* 291 */
+/* 289 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(292);
+	var content = __webpack_require__(290);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(288)(content, {});
+	var update = __webpack_require__(286)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -51507,10 +51505,10 @@
 	}
 
 /***/ },
-/* 292 */
+/* 290 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(287)();
+	exports = module.exports = __webpack_require__(285)();
 	// imports
 
 
@@ -51521,7 +51519,7 @@
 
 
 /***/ },
-/* 293 */
+/* 291 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -51571,7 +51569,7 @@
 	};
 
 /***/ },
-/* 294 */
+/* 292 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -51584,13 +51582,13 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(295);
+	__webpack_require__(293);
 
 	var _paper = __webpack_require__(227);
 
 	var _paper2 = _interopRequireDefault(_paper);
 
-	var _work = __webpack_require__(297);
+	var _work = __webpack_require__(295);
 
 	var _work2 = _interopRequireDefault(_work);
 
@@ -51658,16 +51656,16 @@
 	}); //DUMB
 
 /***/ },
-/* 295 */
+/* 293 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(296);
+	var content = __webpack_require__(294);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(288)(content, {});
+	var update = __webpack_require__(286)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -51684,10 +51682,10 @@
 	}
 
 /***/ },
-/* 296 */
+/* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(287)();
+	exports = module.exports = __webpack_require__(285)();
 	// imports
 
 
@@ -51698,7 +51696,7 @@
 
 
 /***/ },
-/* 297 */
+/* 295 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -51741,125 +51739,7 @@
 	};
 
 /***/ },
-/* 298 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(299);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(288)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../../node_modules/css-loader/index.js!./../../../../node_modules/sass-loader/index.js!./navMenu.scss", function() {
-				var newContent = require("!!./../../../../node_modules/css-loader/index.js!./../../../../node_modules/sass-loader/index.js!./navMenu.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 299 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(287)();
-	// imports
-
-
-	// module
-	exports.push([module.id, "@keyframes fadeInRight {\n  0% {\n    opacity: 0;\n    left: 20%; }\n  100% {\n    opacity: 1;\n    left: 0; } }\n\n.overlay {\n  position: fixed;\n  background: #FF5252;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 0;\n  opacity: 0;\n  visibility: hidden;\n  transition: opacity .35s, visibility .35s, height .35s;\n  overflow: hidden;\n  z-index: 100; }\n  .overlay .overlay-section {\n    width: 50%;\n    height: 100%;\n    float: left; }\n  .overlay .overlay-menu {\n    border-left: 1px solid #fff;\n    padding: 60px; }\n  .overlay.open {\n    opacity: .9;\n    visibility: visible;\n    height: 100%; }\n    .overlay.open li {\n      animation: fadeInRight .5s ease forwards;\n      animation-delay: .35s; }\n      .overlay.open li:nth-of-type(2) {\n        animation-delay: .40s; }\n      .overlay.open li:nth-of-type(3) {\n        animation-delay: .45s; }\n      .overlay.open li:nth-of-type(4) {\n        animation-delay: .50s; }\n      .overlay.open li:nth-of-type(5) {\n        animation-delay: .55s; }\n      .overlay.open li:nth-of-type(6) {\n        animation-delay: .60s; }\n      .overlay.open li:nth-of-type(7) {\n        animation-delay: .65s; }\n  .overlay nav {\n    position: relative;\n    height: 70%;\n    top: 50%;\n    transform: translateY(-50%);\n    font-size: 50px;\n    font-family: 'Vollkorn', serif;\n    font-weight: 400;\n    text-align: left; }\n  .overlay ul {\n    list-style: none;\n    padding: 0;\n    margin: 0 auto;\n    display: inline-block;\n    position: relative;\n    height: 100%; }\n    .overlay ul li {\n      display: block;\n      height: 14.2%;\n      min-height: 50px;\n      position: relative;\n      opacity: 0; }\n      .overlay ul li a {\n        display: block;\n        position: relative;\n        color: #FFF;\n        text-decoration: none;\n        overflow: hidden; }\n        .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {\n          width: 100%; }\n        .overlay ul li a:after {\n          content: '';\n          position: absolute;\n          bottom: 0;\n          left: 0;\n          width: 0;\n          height: 3px;\n          background: #FFF;\n          transition: .35s; }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 300 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _reflux = __webpack_require__(160);
-
-	var _reflux2 = _interopRequireDefault(_reflux);
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _appActions = __webpack_require__(244);
-
-	var _appActions2 = _interopRequireDefault(_appActions);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _reflux2.default.createStore({
-	    listenables: [_appActions2.default],
-
-	    onNavClick: function onNavClick(sectionKey) {
-	        this.trigger({
-	            active: false,
-	            section: sectionKey
-	        });
-	    }
-	}); /**
-	     * Created by amanjain on 14/01/16 at 12:44 AM.
-	     * Description : Actions store for the app
-	     */
-
-/***/ },
-/* 301 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(302);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(288)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./main.scss", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./main.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 302 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(287)();
-	// imports
-
-
-	// module
-	exports.push([module.id, "html, body {\n  height: 100%; }\n\nbody {\n  margin: 0;\n  font-family: sans-serif; }\n\n.nav-btn {\n  position: fixed;\n  top: 24px;\n  right: 24px;\n  z-index: 101; }\n  .nav-btn .nav-btn-icn {\n    width: 32px;\n    position: relative;\n    margin: auto; }\n  .nav-btn .btn-line {\n    background: #FFF;\n    border: none;\n    height: 4px;\n    width: 100%;\n    position: absolute;\n    top: 0;\n    left: 0;\n    transition: all .35s ease;\n    cursor: pointer; }\n    .nav-btn .btn-line:nth-of-type(1) {\n      top: 18px; }\n    .nav-btn .btn-line:nth-of-type(2) {\n      top: 26px; }\n    .nav-btn .btn-line:nth-of-type(3) {\n      top: 34px; }\n  .nav-btn.active .top {\n    transform: translateY(8px) translateX(0) rotate(45deg);\n    background: #FFF; }\n  .nav-btn.active .middle {\n    opacity: 0;\n    background: #FFF; }\n  .nav-btn.active .bottom {\n    transform: translateY(-8px) translateX(0) rotate(-45deg);\n    background: #FFF; }\n\n.section {\n  width: 100%;\n  box-sizing: border-box;\n  background: #FDF3E7; }\n  .section.home {\n    height: 100vh; }\n  .section .section-body {\n    padding: 100px; }\n  .section .s-header-cont {\n    background: #C63D0F;\n    padding: 30px 0 20px; }\n  .section .s-header {\n    text-align: center;\n    margin: auto;\n    display: table;\n    position: relative;\n    color: #eee; }\n    .section .s-header:before {\n      content: \"------- {\";\n      position: absolute;\n      left: -293px;\n      font-size: 100px;\n      top: -3px;\n      color: #ddd; }\n    .section .s-header:after {\n      content: \"} -------\";\n      position: absolute;\n      right: -293px;\n      font-size: 100px;\n      top: -3px;\n      color: #ddd; }\n  .section .s-title {\n    text-transform: uppercase;\n    margin: 10px;\n    font-size: 40px;\n    padding: 30px 50px; }\n  .section .s-subTitle {\n    line-height: 1.4;\n    font-size: 18px; }\n  .section img {\n    height: 100%;\n    width: 100%; }\n  .section a {\n    text-decoration: inherit;\n    color: inherit;\n    cursor: pointer; }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 303 */
+/* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -51880,13 +51760,13 @@
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	__webpack_require__(304);
+	__webpack_require__(297);
 
 	var _paper = __webpack_require__(227);
 
 	var _paper2 = _interopRequireDefault(_paper);
 
-	var _skills = __webpack_require__(306);
+	var _skills = __webpack_require__(299);
 
 	var _skills2 = _interopRequireDefault(_skills);
 
@@ -51940,12 +51820,16 @@
 	                                }), key: iter2, "data-random": Math.floor(Math.random() * (5 - 1) + 1) },
 	                            _react2.default.createElement(
 	                                "div",
-	                                { className: "skills-cont" },
+	                                { className: "skills-cont front" },
 	                                _react2.default.createElement(
 	                                    "div",
 	                                    { className: "skill-logo" },
 	                                    _react2.default.createElement("img", { src: skill.logo })
-	                                ),
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "skills-cont back" },
 	                                _react2.default.createElement(
 	                                    "div",
 	                                    { className: "skill-label" },
@@ -51965,16 +51849,16 @@
 	});
 
 /***/ },
-/* 304 */
+/* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(305);
+	var content = __webpack_require__(298);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(288)(content, {});
+	var update = __webpack_require__(286)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -51991,21 +51875,21 @@
 	}
 
 /***/ },
-/* 305 */
+/* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(287)();
+	exports = module.exports = __webpack_require__(285)();
 	// imports
 
 
 	// module
-	exports.push([module.id, ".skills-container:after {\n  display: block;\n  content: \" \";\n  clear: both; }\n\n.somethins:after {\n  display: block;\n  content: \" \";\n  clear: both; }\n\n.skills-cont-wrap {\n  height: 232px;\n  margin: 1px;\n  float: left; }\n  .skills-cont-wrap.shift {\n    transform: translate(50%, -25%); }\n  .skills-cont-wrap[data-random='1'] .skills-cont {\n    background-color: #81500C;\n    color: #ddd; }\n    .skills-cont-wrap[data-random='1'] .skills-cont:before {\n      border-bottom-color: #81500C; }\n    .skills-cont-wrap[data-random='1'] .skills-cont:after {\n      border-top-color: #81500C; }\n  .skills-cont-wrap[data-random='2'] .skills-cont {\n    background-color: #6C4E33;\n    color: #ddd; }\n    .skills-cont-wrap[data-random='2'] .skills-cont:before {\n      border-bottom-color: #6C4E33; }\n    .skills-cont-wrap[data-random='2'] .skills-cont:after {\n      border-top-color: #6C4E33; }\n  .skills-cont-wrap[data-random='3'] .skills-cont {\n    background-color: #E8D1A4;\n    color: #666; }\n    .skills-cont-wrap[data-random='3'] .skills-cont:before {\n      border-bottom-color: #E8D1A4; }\n    .skills-cont-wrap[data-random='3'] .skills-cont:after {\n      border-top-color: #E8D1A4; }\n  .skills-cont-wrap[data-random='4'] .skills-cont {\n    background-color: #AD864E;\n    color: #666; }\n    .skills-cont-wrap[data-random='4'] .skills-cont:before {\n      border-bottom-color: #AD864E; }\n    .skills-cont-wrap[data-random='4'] .skills-cont:after {\n      border-top-color: #AD864E; }\n\n.skills-cont {\n  width: 200px;\n  height: 116px;\n  position: relative;\n  top: 50%;\n  transform: translateY(-50%);\n  text-align: center;\n  font-size: 25px; }\n\n.skills-cont:before {\n  content: \"\";\n  position: absolute;\n  top: -58px;\n  left: 0;\n  width: 0;\n  height: 0;\n  border-left: 100px solid transparent;\n  border-right: 100px solid transparent;\n  border-bottom: 58px solid; }\n\n.skills-cont:after {\n  content: \"\";\n  position: absolute;\n  bottom: -58px;\n  left: 0;\n  width: 0;\n  height: 0;\n  border-left: 100px solid transparent;\n  border-right: 100px solid transparent;\n  border-top: 58px solid; }\n\n.skill-logo {\n  height: 90px;\n  width: 90px;\n  margin: auto;\n  transform: translateY(-10px); }\n\n.skill-label {\n  transform: translateY(-10px); }\n", ""]);
+	exports.push([module.id, ".skills-container:after {\n  display: block;\n  content: \" \";\n  clear: both; }\n\n.somethins:after {\n  display: block;\n  content: \" \";\n  clear: both; }\n\n.skills-cont-wrap {\n  height: 232px;\n  margin: 1px;\n  float: left;\n  width: 200px;\n  position: relative; }\n  .skills-cont-wrap:after {\n    display: block;\n    content: \" \";\n    clear: both; }\n  .skills-cont-wrap.shift {\n    transform: translate(50%, -25%); }\n  .skills-cont-wrap[data-random='1'] .skills-cont {\n    background-color: #81500C;\n    color: #ddd; }\n    .skills-cont-wrap[data-random='1'] .skills-cont:before {\n      border-bottom-color: #81500C; }\n    .skills-cont-wrap[data-random='1'] .skills-cont:after {\n      border-top-color: #81500C; }\n  .skills-cont-wrap[data-random='2'] .skills-cont {\n    background-color: #6C4E33;\n    color: #ddd; }\n    .skills-cont-wrap[data-random='2'] .skills-cont:before {\n      border-bottom-color: #6C4E33; }\n    .skills-cont-wrap[data-random='2'] .skills-cont:after {\n      border-top-color: #6C4E33; }\n  .skills-cont-wrap[data-random='3'] .skills-cont {\n    background-color: #E8D1A4;\n    color: #666; }\n    .skills-cont-wrap[data-random='3'] .skills-cont:before {\n      border-bottom-color: #E8D1A4; }\n    .skills-cont-wrap[data-random='3'] .skills-cont:after {\n      border-top-color: #E8D1A4; }\n  .skills-cont-wrap[data-random='4'] .skills-cont {\n    background-color: #AD864E;\n    color: #666; }\n    .skills-cont-wrap[data-random='4'] .skills-cont:before {\n      border-bottom-color: #AD864E; }\n    .skills-cont-wrap[data-random='4'] .skills-cont:after {\n      border-top-color: #AD864E; }\n  .skills-cont-wrap:hover .skills-cont.front {\n    -webkit-transform: translateY(-50%) rotateY(180deg);\n    -moz-transform: translateY(-50%) rotateY(180deg);\n    -o-transform: translateY(-50%) rotateY(180deg);\n    transform: translateY(-50%) rotateY(180deg); }\n  .skills-cont-wrap:hover .skills-cont.back {\n    -webkit-transform: translateY(-50%) rotateY(0deg);\n    -moz-transform: translateY(-50%) rotateY(0deg);\n    -o-transform: translateY(-50%) rotateY(0deg);\n    transform: translateY(-50%) rotateY(0deg); }\n\n.skills-cont {\n  width: 200px;\n  height: 116px;\n  top: 50%;\n  left: 0;\n  transform: translateY(-50%);\n  text-align: center;\n  font-size: 25px;\n  position: absolute;\n  -webkit-backface-visibility: hidden;\n  -moz-backface-visibility: hidden;\n  -ms-backface-visibility: hidden;\n  backface-visibility: hidden;\n  -webkit-transition: 0.6s;\n  -webkit-transform-style: preserve-3d; }\n  .skills-cont.front {\n    transform: translateY(-50%) rotateY(0deg); }\n  .skills-cont.back {\n    transform: translateY(-50%) rotateY(-180deg); }\n\n.skills-cont:before {\n  content: \"\";\n  position: absolute;\n  top: -58px;\n  left: 0;\n  width: 0;\n  height: 0;\n  border-left: 100px solid transparent;\n  border-right: 100px solid transparent;\n  border-bottom: 58px solid; }\n\n.skills-cont:after {\n  content: \"\";\n  position: absolute;\n  bottom: -58px;\n  left: 0;\n  width: 0;\n  height: 0;\n  border-left: 100px solid transparent;\n  border-right: 100px solid transparent;\n  border-top: 58px solid; }\n\n.skill-logo {\n  height: 116px;\n  width: 116px;\n  margin: auto; }\n\n.skill-label {\n  top: 50%;\n  transform: translateY(-50%);\n  position: relative; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 306 */
+/* 299 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -52153,6 +52037,124 @@
 	    }
 
 	};
+
+/***/ },
+/* 300 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(301);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(286)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../../node_modules/css-loader/index.js!./../../../../node_modules/sass-loader/index.js!./navMenu.scss", function() {
+				var newContent = require("!!./../../../../node_modules/css-loader/index.js!./../../../../node_modules/sass-loader/index.js!./navMenu.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 301 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(285)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "@keyframes fadeInRight {\n  0% {\n    opacity: 0;\n    left: 20%; }\n  100% {\n    opacity: 1;\n    left: 0; } }\n\n.overlay {\n  position: fixed;\n  background: #FF5252;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 0;\n  opacity: 0;\n  visibility: hidden;\n  transition: opacity .35s, visibility .35s, height .35s;\n  overflow: hidden;\n  z-index: 100; }\n  .overlay .overlay-section {\n    width: 50%;\n    height: 100%;\n    float: left; }\n  .overlay .overlay-menu {\n    border-left: 1px solid #fff;\n    padding: 60px; }\n  .overlay.open {\n    opacity: .9;\n    visibility: visible;\n    height: 100%; }\n    .overlay.open li {\n      animation: fadeInRight .5s ease forwards;\n      animation-delay: .35s; }\n      .overlay.open li:nth-of-type(2) {\n        animation-delay: .40s; }\n      .overlay.open li:nth-of-type(3) {\n        animation-delay: .45s; }\n      .overlay.open li:nth-of-type(4) {\n        animation-delay: .50s; }\n      .overlay.open li:nth-of-type(5) {\n        animation-delay: .55s; }\n      .overlay.open li:nth-of-type(6) {\n        animation-delay: .60s; }\n      .overlay.open li:nth-of-type(7) {\n        animation-delay: .65s; }\n  .overlay nav {\n    position: relative;\n    height: 70%;\n    top: 50%;\n    transform: translateY(-50%);\n    font-size: 50px;\n    font-family: 'Vollkorn', serif;\n    font-weight: 400;\n    text-align: left; }\n  .overlay ul {\n    list-style: none;\n    padding: 0;\n    margin: 0 auto;\n    display: inline-block;\n    position: relative;\n    height: 100%; }\n    .overlay ul li {\n      display: block;\n      height: 14.2%;\n      min-height: 50px;\n      position: relative;\n      opacity: 0; }\n      .overlay ul li a {\n        display: block;\n        position: relative;\n        color: #FFF;\n        text-decoration: none;\n        overflow: hidden; }\n        .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {\n          width: 100%; }\n        .overlay ul li a:after {\n          content: '';\n          position: absolute;\n          bottom: 0;\n          left: 0;\n          width: 0;\n          height: 3px;\n          background: #FFF;\n          transition: .35s; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 302 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _reflux = __webpack_require__(160);
+
+	var _reflux2 = _interopRequireDefault(_reflux);
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _appActions = __webpack_require__(244);
+
+	var _appActions2 = _interopRequireDefault(_appActions);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _reflux2.default.createStore({
+	    listenables: [_appActions2.default],
+
+	    onNavClick: function onNavClick(sectionKey) {
+	        this.trigger({
+	            active: false,
+	            section: sectionKey
+	        });
+	    }
+	}); /**
+	     * Created by amanjain on 14/01/16 at 12:44 AM.
+	     * Description : Actions store for the app
+	     */
+
+/***/ },
+/* 303 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(304);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(286)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./main.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./main.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 304 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(285)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "html, body {\n  height: 100%; }\n\nbody {\n  margin: 0;\n  font-family: sans-serif; }\n\n.nav-btn {\n  position: fixed;\n  top: 24px;\n  right: 24px;\n  z-index: 101; }\n  .nav-btn .nav-btn-icn {\n    width: 32px;\n    position: relative;\n    margin: auto; }\n  .nav-btn .btn-line {\n    background: #FFF;\n    border: none;\n    height: 4px;\n    width: 100%;\n    position: absolute;\n    top: 0;\n    left: 0;\n    transition: all .35s ease;\n    cursor: pointer; }\n    .nav-btn .btn-line:nth-of-type(1) {\n      top: 18px; }\n    .nav-btn .btn-line:nth-of-type(2) {\n      top: 26px; }\n    .nav-btn .btn-line:nth-of-type(3) {\n      top: 34px; }\n  .nav-btn.active .top {\n    transform: translateY(8px) translateX(0) rotate(45deg);\n    background: #FFF; }\n  .nav-btn.active .middle {\n    opacity: 0;\n    background: #FFF; }\n  .nav-btn.active .bottom {\n    transform: translateY(-8px) translateX(0) rotate(-45deg);\n    background: #FFF; }\n\n.section {\n  width: 100%;\n  box-sizing: border-box;\n  background: #FDF3E7; }\n  .section.home {\n    height: 100vh; }\n  .section .section-body {\n    padding: 100px; }\n  .section .s-header-cont {\n    background: #C63D0F;\n    padding: 30px 0 20px; }\n  .section .s-header {\n    text-align: center;\n    margin: auto;\n    display: table;\n    position: relative;\n    color: #eee; }\n    .section .s-header:before {\n      content: \"------- {\";\n      position: absolute;\n      left: -293px;\n      font-size: 100px;\n      top: -3px;\n      color: #ddd; }\n    .section .s-header:after {\n      content: \"} -------\";\n      position: absolute;\n      right: -293px;\n      font-size: 100px;\n      top: -3px;\n      color: #ddd; }\n  .section .s-title {\n    text-transform: uppercase;\n    margin: 10px;\n    font-size: 40px;\n    padding: 30px 50px; }\n  .section .s-subTitle {\n    line-height: 1.4;\n    font-size: 18px; }\n  .section img {\n    height: 100%;\n    width: 100%; }\n  .section a {\n    text-decoration: inherit;\n    color: inherit;\n    cursor: pointer; }\n", ""]);
+
+	// exports
+
 
 /***/ }
 /******/ ]);
