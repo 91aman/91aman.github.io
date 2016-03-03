@@ -22,7 +22,7 @@
   &[data-random='1'] {
     .skills-cont {
       background-color: #81500C;
-      color: white;
+      color: #ddd;
 
       &:before {
         border-bottom-color: #81500C
@@ -37,7 +37,7 @@
   &[data-random='2'] {
     .skills-cont {
       background-color: #6C4E33;
-      color: white;
+      color: #ddd;
 
       &:before {
         border-bottom-color: #6C4E33
@@ -52,6 +52,7 @@
   &[data-random='3'] {
     .skills-cont {
       background-color: #E8D1A4;
+      color: #666;
 
       &:before {
         border-bottom-color: #E8D1A4
@@ -66,6 +67,7 @@
   &[data-random='4'] {
     .skills-cont {
       background-color: #AD864E;
+      color: #666;
 
       &:before {
         border-bottom-color: #AD864E
@@ -84,6 +86,8 @@
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  text-align: center;
+  font-size: 25px;
 }
 
 .skills-cont:before {
@@ -108,4 +112,15 @@
   border-left: 100px solid transparent;
   border-right: 100px solid transparent;
   border-top: 58px solid;
+}
+
+.skill-logo{
+  height: 90px;
+  width: 90px;
+  margin: auto;
+  transform: translateY(-10px);
+}
+
+.skill-label{
+  transform: translateY(-10px);
 }

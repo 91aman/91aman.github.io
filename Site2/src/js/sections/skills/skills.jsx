@@ -36,7 +36,7 @@ export default React.createClass({
 
             {_.map(parsedSkillsConstants, (skillsArr, iter)=> {
                 return (
-                    <div className="somethins" style={{
+                    <div className="somethins" key={iter} style={{
                         transform: "translateY(" + (iter * -25) + "%)"
                     }}>
                         {_.map(skillsArr, (skill, iter2) => {
@@ -44,9 +44,14 @@ export default React.createClass({
                                 <div className={ClassNames({
                                     "skills-cont-wrap": true,
                                     shift: _.contains([6, 7, 8, 9, 10], iter2)
-                                })} data-random={Math.floor(Math.random() * (5 - 1) + 1)} >
+                                })} key={iter2} data-random={Math.floor(Math.random() * (5 - 1) + 1)} >
                                     <div className="skills-cont">
-                                            Awesome !
+                                        <div className="skill-logo">
+                                            <img src={skill.logo}/>
+                                        </div>
+                                        <div className="skill-label">
+                                            <a href={skill.url} target="_blank">{skill.label}</a>
+                                        </div>
                                     </div>
                                 </div>
                             )

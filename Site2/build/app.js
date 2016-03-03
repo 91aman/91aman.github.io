@@ -51928,7 +51928,7 @@
 	            _lodash2.default.map(parsedSkillsConstants, function (skillsArr, iter) {
 	                return _react2.default.createElement(
 	                    "div",
-	                    { className: "somethins", style: {
+	                    { className: "somethins", key: iter, style: {
 	                            transform: "translateY(" + iter * -25 + "%)"
 	                        } },
 	                    _lodash2.default.map(skillsArr, function (skill, iter2) {
@@ -51937,11 +51937,24 @@
 	                            { className: (0, _classnames2.default)({
 	                                    "skills-cont-wrap": true,
 	                                    shift: _lodash2.default.contains([6, 7, 8, 9, 10], iter2)
-	                                }), "data-random": Math.floor(Math.random() * (5 - 1) + 1) },
+	                                }), key: iter2, "data-random": Math.floor(Math.random() * (5 - 1) + 1) },
 	                            _react2.default.createElement(
 	                                "div",
 	                                { className: "skills-cont" },
-	                                "Awesome !"
+	                                _react2.default.createElement(
+	                                    "div",
+	                                    { className: "skill-logo" },
+	                                    _react2.default.createElement("img", { src: skill.logo })
+	                                ),
+	                                _react2.default.createElement(
+	                                    "div",
+	                                    { className: "skill-label" },
+	                                    _react2.default.createElement(
+	                                        "a",
+	                                        { href: skill.url, target: "_blank" },
+	                                        skill.label
+	                                    )
+	                                )
 	                            )
 	                        );
 	                    })
@@ -51986,7 +51999,7 @@
 
 
 	// module
-	exports.push([module.id, ".skills-container:after {\n  display: block;\n  content: \" \";\n  clear: both; }\n\n.somethins:after {\n  display: block;\n  content: \" \";\n  clear: both; }\n\n.skills-cont-wrap {\n  height: 232px;\n  margin: 1px;\n  float: left; }\n  .skills-cont-wrap.shift {\n    transform: translate(50%, -25%); }\n  .skills-cont-wrap[data-random='1'] .skills-cont {\n    background-color: #81500C;\n    color: white; }\n    .skills-cont-wrap[data-random='1'] .skills-cont:before {\n      border-bottom-color: #81500C; }\n    .skills-cont-wrap[data-random='1'] .skills-cont:after {\n      border-top-color: #81500C; }\n  .skills-cont-wrap[data-random='2'] .skills-cont {\n    background-color: #6C4E33;\n    color: white; }\n    .skills-cont-wrap[data-random='2'] .skills-cont:before {\n      border-bottom-color: #6C4E33; }\n    .skills-cont-wrap[data-random='2'] .skills-cont:after {\n      border-top-color: #6C4E33; }\n  .skills-cont-wrap[data-random='3'] .skills-cont {\n    background-color: #E8D1A4; }\n    .skills-cont-wrap[data-random='3'] .skills-cont:before {\n      border-bottom-color: #E8D1A4; }\n    .skills-cont-wrap[data-random='3'] .skills-cont:after {\n      border-top-color: #E8D1A4; }\n  .skills-cont-wrap[data-random='4'] .skills-cont {\n    background-color: #AD864E; }\n    .skills-cont-wrap[data-random='4'] .skills-cont:before {\n      border-bottom-color: #AD864E; }\n    .skills-cont-wrap[data-random='4'] .skills-cont:after {\n      border-top-color: #AD864E; }\n\n.skills-cont {\n  width: 200px;\n  height: 116px;\n  position: relative;\n  top: 50%;\n  transform: translateY(-50%); }\n\n.skills-cont:before {\n  content: \"\";\n  position: absolute;\n  top: -58px;\n  left: 0;\n  width: 0;\n  height: 0;\n  border-left: 100px solid transparent;\n  border-right: 100px solid transparent;\n  border-bottom: 58px solid; }\n\n.skills-cont:after {\n  content: \"\";\n  position: absolute;\n  bottom: -58px;\n  left: 0;\n  width: 0;\n  height: 0;\n  border-left: 100px solid transparent;\n  border-right: 100px solid transparent;\n  border-top: 58px solid; }\n", ""]);
+	exports.push([module.id, ".skills-container:after {\n  display: block;\n  content: \" \";\n  clear: both; }\n\n.somethins:after {\n  display: block;\n  content: \" \";\n  clear: both; }\n\n.skills-cont-wrap {\n  height: 232px;\n  margin: 1px;\n  float: left; }\n  .skills-cont-wrap.shift {\n    transform: translate(50%, -25%); }\n  .skills-cont-wrap[data-random='1'] .skills-cont {\n    background-color: #81500C;\n    color: #ddd; }\n    .skills-cont-wrap[data-random='1'] .skills-cont:before {\n      border-bottom-color: #81500C; }\n    .skills-cont-wrap[data-random='1'] .skills-cont:after {\n      border-top-color: #81500C; }\n  .skills-cont-wrap[data-random='2'] .skills-cont {\n    background-color: #6C4E33;\n    color: #ddd; }\n    .skills-cont-wrap[data-random='2'] .skills-cont:before {\n      border-bottom-color: #6C4E33; }\n    .skills-cont-wrap[data-random='2'] .skills-cont:after {\n      border-top-color: #6C4E33; }\n  .skills-cont-wrap[data-random='3'] .skills-cont {\n    background-color: #E8D1A4;\n    color: #666; }\n    .skills-cont-wrap[data-random='3'] .skills-cont:before {\n      border-bottom-color: #E8D1A4; }\n    .skills-cont-wrap[data-random='3'] .skills-cont:after {\n      border-top-color: #E8D1A4; }\n  .skills-cont-wrap[data-random='4'] .skills-cont {\n    background-color: #AD864E;\n    color: #666; }\n    .skills-cont-wrap[data-random='4'] .skills-cont:before {\n      border-bottom-color: #AD864E; }\n    .skills-cont-wrap[data-random='4'] .skills-cont:after {\n      border-top-color: #AD864E; }\n\n.skills-cont {\n  width: 200px;\n  height: 116px;\n  position: relative;\n  top: 50%;\n  transform: translateY(-50%);\n  text-align: center;\n  font-size: 25px; }\n\n.skills-cont:before {\n  content: \"\";\n  position: absolute;\n  top: -58px;\n  left: 0;\n  width: 0;\n  height: 0;\n  border-left: 100px solid transparent;\n  border-right: 100px solid transparent;\n  border-bottom: 58px solid; }\n\n.skills-cont:after {\n  content: \"\";\n  position: absolute;\n  bottom: -58px;\n  left: 0;\n  width: 0;\n  height: 0;\n  border-left: 100px solid transparent;\n  border-right: 100px solid transparent;\n  border-top: 58px solid; }\n\n.skill-logo {\n  height: 90px;\n  width: 90px;\n  margin: auto;\n  transform: translateY(-10px); }\n\n.skill-label {\n  transform: translateY(-10px); }\n", ""]);
 
 	// exports
 
@@ -51995,7 +52008,7 @@
 /* 306 */
 /***/ function(module, exports) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -52006,48 +52019,73 @@
 	 */
 
 	exports.default = {
-	    ad: {},
-	    ad1: {},
-	    ad2: {},
-	    ad3: {},
-	    ad4: {},
-	    ad5: {},
-	    ad6: {},
-	    ad7: {},
-	    ad8: {},
-	    ad9: {},
-	    ad10: {},
-	    ad11: {},
-	    ad12: {},
-	    ad13: {},
-	    ad14: {},
-	    ad15: {},
-	    ad16: {},
-	    ad17: {},
-	    ad18: {},
-	    ad19: {},
-	    ad20: {},
-	    ad21: {},
-	    ad22: {},
-	    ad23: {},
-	    ad24: {},
-	    ad25: {},
-	    ad26: {},
-	    ad27: {},
-	    ad28: {},
-	    ad29: {},
-	    ad30: {},
-	    ad31: {},
-	    ad32: {},
-	    ad33: {},
-	    ad34: {},
-	    ad35: {},
-	    ad36: {},
-	    ad37: {},
-	    ad38: {},
-	    ad39: {},
-	    ad40: {},
-	    ad41: {}
+	    React: {
+	        id: 'react',
+	        label: 'React',
+	        logo: 'https://raw.githubusercontent.com/wiki/facebook/react/react-logo-1000-transparent.png',
+	        url: 'https://facebook.github.io/react/'
+	    },
+	    javascript: {
+	        id: 'javascript',
+	        label: 'Javascript',
+	        logo: 'https://www.codementor.io/assets/page_img/learn-javascript.png',
+	        url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
+	    },
+	    css3: {
+	        id: 'css3',
+	        label: 'CSS3',
+	        logo: 'http://www.palermo4.com/image.axd?picture=CSS3-Logo.png',
+	        url: 'https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3'
+	    },
+	    html5: {
+	        id: 'html5',
+	        label: 'HTML5',
+	        logo: 'https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png',
+	        url: 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5'
+	    },
+	    backbone: {
+	        id: 'backbone',
+	        label: 'Backbone',
+	        logo: 'http://file.mrbool.com/mrbool/articles/MuhammadAzamuddin/BackBoneEvents/BackBoneEvents01.png',
+	        url: 'http://backbonejs.org/'
+	    },
+	    jQuery: {
+	        id: 'jQuery',
+	        label: 'jQuery',
+	        logo: 'https://avatars0.githubusercontent.com/u/70142?v=3&s=400',
+	        url: 'https://jquery.com/'
+	    },
+	    lodash: {
+	        id: 'lodash',
+	        label: 'lodash',
+	        logo: 'https://vickev.com/uploads/1380888211177.png',
+	        url: 'https://lodash.com/'
+	    },
+	    webpack: {
+	        id: 'webpack',
+	        label: 'Webpack',
+	        logo: 'http://dm.gl/assets/webpackLogo.png',
+	        url: 'https://webpack.github.io/'
+	    },
+	    requireJs: {
+	        id: 'requireJs',
+	        label: 'requirejs',
+	        logo: 'https://avatars3.githubusercontent.com/u/1781835?v=3&s=400',
+	        url: 'http://requirejs.org/'
+	    },
+	    bootstrap: {
+	        id: 'bootstrap',
+	        label: 'Bootstrap',
+	        logo: 'https://raw.githubusercontent.com/Mikescops/bootstrapbolttheme/master/icon-bootstrap.png',
+	        url: 'http://getbootstrap.com/'
+	    },
+	    less: {
+	        id: 'less',
+	        label: 'Less',
+	        logo: 'http://www.arrowhitech.com/wp-content/uploads/2014/10/less-framework-technology-377x200.png',
+	        url: 'http://lesscss.org/'
+	    }
+
 	};
 
 /***/ }
