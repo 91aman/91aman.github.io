@@ -10,6 +10,7 @@ import WorkIcon from 'material-ui/lib/svg-icons/places/business-center';
 import SkillsIcon from 'material-ui/lib/svg-icons/action/build';
 import SchoolIcon from 'material-ui/lib/svg-icons/social/school';
 import AchievementsIcon from 'material-ui/lib/svg-icons/action/stars';
+import ProjectsIcon from 'material-ui/lib/svg-icons/av/library-books.js';
 import ContactIcon from 'material-ui/lib/svg-icons/communication/contacts';
 //import Skills from '../sections/skills.jsx';
 import Intro from '../sections/intro/intro.jsx';
@@ -54,6 +55,12 @@ export default {
         title: 'Achievements',
         subTitle: '',
         icon: AchievementsIcon,
+        body: About
+    },
+    projects: {
+        title: 'Projects',
+        subTitle: '',
+        icon: ProjectsIcon,
         body: About
     },
     contact: {
