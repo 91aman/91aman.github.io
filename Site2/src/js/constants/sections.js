@@ -18,6 +18,7 @@ import About from '../sections/about.jsx';
 import Education from '../sections/education/education.jsx';
 import Work from '../sections/work/work.jsx';
 import Skills from '../sections/skills/skills.jsx';
+import Projects from '../sections/projects/projects.jsx';
 
 export default {
     home: {
@@ -51,16 +52,16 @@ export default {
         icon: SchoolIcon,
         body: Education
     },
-    achievements: {
-        title: 'Achievements',
-        subTitle: '',
-        icon: AchievementsIcon,
-        body: About
-    },
     projects: {
         title: 'Projects',
         subTitle: '',
         icon: ProjectsIcon,
+        body: Projects
+    },
+    achievements: {
+        title: 'Achievements',
+        subTitle: '',
+        icon: AchievementsIcon,
         body: About
     },
     contact: {
