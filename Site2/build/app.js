@@ -19728,12 +19728,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function onClick() {
-	    (0, _request2.default)({
-	        url: 'http://172.16.1.18:9000/ui',
-	        headers: {
-	            'Access-Control-Allow-Origin': '*'
-	        }
-	    }, function (error, response, body) {
+	    _request2.default.get('http://172.16.1.18:9000/ui', {}, function (error, response, body) {
 	        if (!error && response.statusCode == 200) {
 	            console.log(body); // Show the HTML for the Google homepage.
 	        }

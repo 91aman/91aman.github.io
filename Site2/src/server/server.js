@@ -12,7 +12,8 @@ const PORT = 9000;
 
 //We need a function which handles requests and send response
 function handleRequest(request, response) {
-    response.setHeader("Access-Control-Allow-Origin", "http://localhost:63342");
+    response.setHeader("Access-Control-Allow-Credentials", true);
+    response.setHeader("Access-Control-Allow-Origin", request.headers.origin || '*');
     console.log('It Works!! Path Hit: ' + request.url);
     response.end('It Works!! Path Hit: ' + request.url);
 }

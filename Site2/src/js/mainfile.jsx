@@ -13,16 +13,11 @@ import Sections from './constants/sections';
 
 
 function onClick() {
-    Request({
-        url: 'http://172.16.1.18:9000/ui',
-        headers: {
-            'Access-Control-Allow-Origin' : '*'
-        }
-    }, function (error, response, body) {
+    Request.get('http://172.16.1.18:9000/ui', {}, function (error, response, body) {
         if (!error && response.statusCode == 200) {
             console.log(body); // Show the HTML for the Google homepage.
         }
-    })
+    });
 };
 
 export default React.createClass({
