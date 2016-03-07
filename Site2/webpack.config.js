@@ -23,7 +23,17 @@ module.exports = {
                 test: /\.scss$/,
                 exclude: /node_modules/,
                 loader: 'style-loader!css-loader!sass-loader'
+            },
+            {
+                test: /\.json$/,
+                loader: 'json-loader'
             }
         ]
+    },
+    node: {
+       // console: 'empty',
+        fs: 'empty',
+        net: 'empty',
+        tls: 'empty'
     }
 };

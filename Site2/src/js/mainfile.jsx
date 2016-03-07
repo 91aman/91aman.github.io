@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 import Reflux from 'reflux';
+import Request from 'request';
 //import Intro from './intro.jsx';
 import SectionBase from './sections/sectionBase.jsx';
 import NavMenu from './sections/navMenu/navMenu.jsx';
@@ -9,6 +10,20 @@ import FloatingActionButton from 'material-ui/lib/floating-action-button';
 import ClassNames from 'classnames';
 import AppStore from './stores/appStore';
 import Sections from './constants/sections';
+
+
+function onClick() {
+    Request({
+        url: 'http://172.16.1.18:9000/ui',
+        headers: {
+            'Access-Control-Allow-Origin' : '*'
+        }
+    }, function (error, response, body) {
+        if (!error && response.statusCode == 200) {
+            console.log(body); // Show the HTML for the Google homepage.
+        }
+    })
+};
 
 export default React.createClass({
 
@@ -28,9 +43,7 @@ export default React.createClass({
                 <div className={ClassNames("nav-btn", {
                     active: that.state.active
                 })}>
-                    <FloatingActionButton onClick={function () {
-                        that.setState({active: !that.state.active})
-                    }}>
+                    <FloatingActionButton onClick={onClick}>
                         <div className="nav-btn-icn">
                             <span className="top btn-line"></span>
                             <span className="middle btn-line"></span>
