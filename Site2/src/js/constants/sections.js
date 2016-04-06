@@ -58,12 +58,12 @@ export default {
         icon: ProjectsIcon,
         body: Projects
     },
-    achievements: {
-        title: 'Achievements',
-        subTitle: '',
-        icon: AchievementsIcon,
-        body: About
-    },
+    //achievements: {
+    //    title: 'Achievements',
+    //    subTitle: '',
+    //    icon: AchievementsIcon,
+    //    body: About
+    //},
     contact: {
         title: 'Contact',
         subTitle: '',
