@@ -19774,7 +19774,7 @@
 	            _react2.default.createElement(_navMenu2.default, { open: that.state.active }),
 	            _.map(_sections2.default, function (section, key) {
 
-	                if (section.ignoreSection) {
+	                if (section.ignoreSectionHeader) {
 	                    return _react2.default.createElement(
 	                        'section',
 	                        { ref: key, key: key, className: "section " + key },
@@ -63641,17 +63641,23 @@
 
 	        return _react2.default.createElement(
 	            "div",
-	            { className: 's-container' },
+	            { className: "s-container" },
 	            _react2.default.createElement(
 	                "div",
-	                { className: "s-header-cont" },
+	                { className: "s-header-cont", style: {
+	                        backgroundImage: "url(" + section.headerBackImage + ")"
+	                    } },
 	                _react2.default.createElement(
 	                    "div",
-	                    { className: 's-header' },
+	                    { className: "s-header-cont-wrap" },
 	                    _react2.default.createElement(
 	                        "div",
-	                        { className: 's-title' },
-	                        section.title
+	                        { className: "s-header" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "s-title" },
+	                            section.title
+	                        )
 	                    )
 	                )
 	            ),
@@ -92020,36 +92026,41 @@
 	        subTitle: '',
 	        icon: _home2.default,
 	        body: _intro2.default,
-	        ignoreSection: true
+	        ignoreSectionHeader: true
 	    },
 	    about: {
 	        title: 'About',
 	        subTitle: '',
 	        icon: _person2.default,
+	        headerBackImage: 'src/img/back-1.png',
 	        body: _about2.default
 	    },
 	    work: {
 	        title: 'Work',
 	        subTitle: '',
 	        icon: _businessCenter2.default,
+	        headerBackImage: 'src/img/back-2.png',
 	        body: _work2.default
 	    },
 	    skills: {
 	        title: "Skills & Expertise",
 	        subTitle: "I've been developing my skill–set to focus on what’s most suited to getting the job done quickly and effectively.",
 	        icon: _build2.default,
+	        headerBackImage: 'src/img/back-3.png',
 	        body: _skills2.default
 	    },
 	    education: {
 	        title: 'Education',
 	        subTitle: '',
 	        icon: _school2.default,
+	        headerBackImage: 'src/img/back-4.png',
 	        body: _education2.default
 	    },
 	    projects: {
 	        title: 'Projects',
 	        subTitle: '',
 	        icon: _libraryBooks2.default,
+	        headerBackImage: 'src/img/back-5.png',
 	        body: _projects2.default
 	    },
 	    //achievements: {
@@ -92062,6 +92073,7 @@
 	        title: 'Contact',
 	        subTitle: '',
 	        icon: _contacts2.default,
+	        headerBackImage: 'src/img/back-6.png',
 	        body: _about2.default
 	    }
 	};
@@ -94797,7 +94809,7 @@
 
 
 	// module
-	exports.push([module.id, "html, body {\n  height: 100%; }\n\nbody {\n  margin: 0;\n  font-family: sans-serif; }\n\n.nav-btn {\n  position: fixed;\n  top: 24px;\n  right: 24px;\n  z-index: 101; }\n  .nav-btn .nav-btn-icn {\n    width: 32px;\n    position: relative;\n    margin: auto; }\n  .nav-btn .btn-line {\n    background: #FFF;\n    border: none;\n    height: 4px;\n    width: 100%;\n    position: absolute;\n    top: 0;\n    left: 0;\n    transition: all .35s ease;\n    cursor: pointer; }\n    .nav-btn .btn-line:nth-of-type(1) {\n      top: 18px; }\n    .nav-btn .btn-line:nth-of-type(2) {\n      top: 26px; }\n    .nav-btn .btn-line:nth-of-type(3) {\n      top: 34px; }\n  .nav-btn.active .top {\n    transform: translateY(8px) translateX(0) rotate(45deg);\n    background: #FFF; }\n  .nav-btn.active .middle {\n    opacity: 0;\n    background: #FFF; }\n  .nav-btn.active .bottom {\n    transform: translateY(-8px) translateX(0) rotate(-45deg);\n    background: #FFF; }\n\n.section {\n  width: 100%;\n  box-sizing: border-box;\n  background: #FDF3E7; }\n  .section.home {\n    height: 100vh; }\n  .section .section-body {\n    padding: 100px; }\n  .section .s-header-cont {\n    background: #C63D0F;\n    padding: 30px 0 20px; }\n  .section .s-header {\n    text-align: center;\n    margin: auto;\n    display: table;\n    position: relative;\n    color: #eee; }\n    .section .s-header:before {\n      content: \"------- {\";\n      position: absolute;\n      left: -293px;\n      font-size: 100px;\n      top: -3px;\n      color: #ddd; }\n    .section .s-header:after {\n      content: \"} -------\";\n      position: absolute;\n      right: -293px;\n      font-size: 100px;\n      top: -3px;\n      color: #ddd; }\n  .section .s-title {\n    text-transform: uppercase;\n    margin: 10px;\n    font-size: 40px;\n    padding: 30px 50px; }\n  .section .s-subTitle {\n    line-height: 1.4;\n    font-size: 18px; }\n  .section img {\n    height: 100%;\n    width: 100%; }\n  .section a {\n    text-decoration: inherit;\n    color: inherit;\n    cursor: pointer; }\n", ""]);
+	exports.push([module.id, "html, body {\n  height: 100%; }\n\nbody {\n  margin: 0;\n  font-family: sans-serif; }\n\n.nav-btn {\n  position: fixed;\n  top: 24px;\n  right: 24px;\n  z-index: 101; }\n  .nav-btn .nav-btn-icn {\n    width: 32px;\n    position: relative;\n    margin: auto; }\n  .nav-btn .btn-line {\n    background: #FFF;\n    border: none;\n    height: 4px;\n    width: 100%;\n    position: absolute;\n    top: 0;\n    left: 0;\n    transition: all .35s ease;\n    cursor: pointer; }\n    .nav-btn .btn-line:nth-of-type(1) {\n      top: 18px; }\n    .nav-btn .btn-line:nth-of-type(2) {\n      top: 26px; }\n    .nav-btn .btn-line:nth-of-type(3) {\n      top: 34px; }\n  .nav-btn.active .top {\n    transform: translateY(8px) translateX(0) rotate(45deg);\n    background: #FFF; }\n  .nav-btn.active .middle {\n    opacity: 0;\n    background: #FFF; }\n  .nav-btn.active .bottom {\n    transform: translateY(-8px) translateX(0) rotate(-45deg);\n    background: #FFF; }\n\n.section {\n  width: 100%;\n  box-sizing: border-box;\n  background: #FDF3E7; }\n  .section.home {\n    height: 100vh; }\n  .section .section-body {\n    padding: 100px; }\n  .section .s-header-cont {\n    height: 300px;\n    width: 100%;\n    background-image: url(\"http://www.topofandroid.com/wp-content/uploads/2015/05/Android-L-Material-Design-Wallpapers-5.png\");\n    background-position: 100% 50%;\n    background-attachment: fixed;\n    background-size: cover;\n    position: relative; }\n  .section .s-header-cont-wrap {\n    width: 100%;\n    top: 50%;\n    position: absolute;\n    transform: translateY(-50%); }\n  .section .s-header {\n    text-align: center;\n    margin: auto;\n    display: table;\n    position: relative; }\n    .section .s-header:before {\n      content: \"------- {\";\n      position: absolute;\n      left: -293px;\n      font-size: 106px;\n      top: -3px; }\n    .section .s-header:after {\n      content: \"} -------\";\n      position: absolute;\n      right: -293px;\n      font-size: 106px;\n      top: -3px; }\n  .section .s-title {\n    text-transform: uppercase;\n    margin: 10px;\n    font-size: 50px;\n    padding: 30px 50px; }\n  .section .s-subTitle {\n    line-height: 1.4;\n    font-size: 18px; }\n  .section img {\n    height: 100%;\n    width: 100%; }\n  .section a {\n    text-decoration: inherit;\n    color: inherit;\n    cursor: pointer; }\n", ""]);
 
 	// exports
 

@@ -26,36 +26,41 @@ export default {
         subTitle: '',
         icon: HomeIcon,
         body: Intro,
-        ignoreSection: true
+        ignoreSectionHeader: true
     },
     about: {
         title: 'About',
         subTitle: '',
         icon: AboutIcon,
+        headerBackImage : 'src/img/back-1.png',
         body: About
     },
     work: {
         title: 'Work',
         subTitle: '',
         icon: WorkIcon,
+        headerBackImage : 'src/img/back-2.png',
         body: Work
     },
     skills: {
         title: "Skills & Expertise",
         subTitle: "I've been developing my skill–set to focus on what’s most suited to getting the job done quickly and effectively.",
         icon: SkillsIcon,
+        headerBackImage : 'src/img/back-3.png',
         body: Skills
     },
     education: {
         title: 'Education',
         subTitle: '',
         icon: SchoolIcon,
+        headerBackImage : 'src/img/back-4.png',
         body: Education
     },
     projects: {
         title: 'Projects',
         subTitle: '',
         icon: ProjectsIcon,
+        headerBackImage : 'src/img/back-5.png',
         body: Projects
     },
     //achievements: {
@@ -68,6 +73,7 @@ export default {
         title: 'Contact',
         subTitle: '',
         icon: ContactIcon,
+        headerBackImage : 'src/img/back-6.png',
         body: About
     }
 };

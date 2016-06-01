@@ -15,11 +15,15 @@ export default React.createClass({
         var section = this.props.section;
 
         return (
-            <div className={'s-container'}>
-                <div className="s-header-cont">
-                    <div className={'s-header'}>
-                        <div className={'s-title'}>
-                    {section.title}
+            <div className='s-container'>
+                <div className="s-header-cont" style={{
+                backgroundImage : "url("+ section.headerBackImage +")"
+                }}>
+                    <div className="s-header-cont-wrap">
+                        <div className='s-header'>
+                            <div className='s-title'>
+                                {section.title}
+                            </div>
                         </div>
                     </div>
                 </div>

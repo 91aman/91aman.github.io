@@ -49,7 +49,7 @@ export default React.createClass({
                 <NavMenu open={that.state.active}/>
             {_.map(Sections, (section, key) => {
 
-                if (section.ignoreSection) {
+                if (section.ignoreSectionHeader) {
                     return (<section ref={key} key={key} className={"section " + key}>
                         <section.body/>
                     </section>)
